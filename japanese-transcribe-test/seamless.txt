@@ -1,0 +1,37 @@
+❯ ls japanese-phrases/
+
+Using the cached checkpoint of the model 'seamlessM4T_large'. Set `force=True` to download again.
+Using the cached tokenizer of the model 'seamlessM4T_large'. Set `force=True` to download again.
+Using the cached checkpoint of the model 'vocoder_36langs'. Set `force=True` to download again.
+Loading Translator took 22.50202 seconds to run.
+
+Transcribing japanese-phrases/hai.wav took 0.30803 seconds to run.
+
+ハイ!
+transcribe took 0.31048 seconds to run.
+
+Transcribing japanese-phrases/konichiwa.wav took 0.12826 seconds to run.
+
+こんにちは ⁇ 
+transcribe took 0.13079 seconds to run.
+
+Transcribing japanese-phrases/konichiwa.ogenkidesuka.wav took 0.19204 seconds to run.
+
+こんにちは ⁇ 元気元気ですか ⁇ 
+transcribe took 0.19444 seconds to run.
+
+Transcribing japanese-phrases/kumbawa.wav took 0.11723 seconds to run.
+
+こんばんは
+transcribe took 0.11962 seconds to run.
+
+Transcribing japanese-phrases/sosososo.wav took 0.13208 seconds to run.
+
+行け行け行け
+transcribe took 0.13374 seconds to run.
+
+Transcribing japanese-phrases/sumimasen.wav took 0.11665 seconds to run.
+
+住みません ⁇ 
+transcribe took 0.11841 seconds to run.
+
