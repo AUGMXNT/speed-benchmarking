@@ -33,7 +33,7 @@ unset PS1
 
 # Install requirements
 mamba install -c "nvidia/label/cuda-12.1.1" cuda-toolkit -y
-mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
 mamba upgrade ffmpeg -y
 
 pip install transformers datasets accelerate
