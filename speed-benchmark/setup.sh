@@ -25,13 +25,15 @@ bash Miniforge3-$(uname)-$(uname -m).sh -b -p /workspace/miniforge3
 
 # Setup
 /workspace/miniforge3/bin/mamba init
-source ~/.bashrc
 
-sleep 10
+# Force bashrc to run in interactive mode
+PS1='$ '
+source ~/.bashrc
+unset PS1
 
 # Install requirements
-mamba install -c "nvidia/label/cuda-12.1.0" cuda-toolkit -y
-pip install torch torchvision torchaudio
+mamba install -c "nvidia/label/cuda-12.1.1" cuda-toolkit -y
+mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 mamba upgrade ffmpeg -y
 
 pip install transformers datasets accelerate
