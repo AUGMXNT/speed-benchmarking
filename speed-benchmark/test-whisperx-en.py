@@ -5,6 +5,7 @@ import os
 from   pprint import pprint
 import soundfile as sf
 import tempfile
+import time
 import whisperx
 
 from mytimer import TimeIt
@@ -21,11 +22,14 @@ with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmpfile:
     tmpfile_path = tmpfile.name
 
 audio = whisperx.load_audio(tmpfile_path)
-print(tmpfile_path)
 
-with TimeIt('SRT'):
-    result = model.transcribe(audio, batch_size=batch_size)
-
-pprint(result)
+for i in range(5):
+    with TimeIt('SRT'):
+        result = model.transcribe(audio, batch_size=batch_size)
+    pprint(result)
+    time.sleep(1)
 
 os.remove(tmpfile_path)
+
+logger.info(f"SRT average: {TimeIt.get_mean('SRT'):.1f} ms")
+logger.info(f"SRT median: {TimeIt.get_median('SRT'):.1f} ms")

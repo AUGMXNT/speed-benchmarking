@@ -1,13 +1,12 @@
 import logging
 from   loguru import logger
+import time
 import torch
 
 from   transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
 from   datasets import load_dataset
 
 from mytimer import TimeIt
-
-import whisperx
 
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
@@ -38,6 +37,12 @@ pipe = pipeline(
 dataset = load_dataset("distil-whisper/librispeech_long", "clean", split="validation")
 sample = dataset[0]["audio"]
 
-with TimeIt('SRT'):
-    result = pipe(sample)
-print(result["text"])
+for i in range(5):
+    sample = dataset[0]["audio"]
+    with TimeIt('SRT'):
+        result = pipe(sample)
+    print(result["text"])
+    time.sleep(1)
+
+logger.info(f"SRT average: {TimeIt.get_mean('SRT'):.1f} ms")
+logger.info(f"SRT median: {TimeIt.get_median('SRT'):.1f} ms")
