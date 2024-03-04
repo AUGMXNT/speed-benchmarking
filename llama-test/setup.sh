@@ -1,5 +1,5 @@
 # vast images require this
-apt install -y build-essential
+apt install -y build-essential cmake
 
 # vast images have an LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/workspace/miniforge3/lib
