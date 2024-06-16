@@ -6,11 +6,11 @@ Logs of runs here: https://wandb.ai/augmxnt/train-bench
 
 More legible spreadsheet summary of results: https://docs.google.com/spreadsheets/d/115Utf5SuQOEOCQpYCeg_zB-nowej7joTkya6gYla5Hc/edit?usp=sharing
 
-* On this particular test, for my hardware (3090, 4090) unsloth is 5-6X is faster than the 2X claimed speedups? https://github.com/unslothai/unsloth/tree/main#-performance-benchmarking - it is also able to fit batch_size=2 in 24GB while torchtune and axolotl OOM
+* On this particular test, for my hardware (3090, 4090) unsloth is ~25% faster than the torchtune torch.compile() runs. For reference, see: https://github.com/unslothai/unsloth/tree/main#-performance-benchmarking - some of the speed is that is is able to fit batch_size=2 in 24GB while torchtune and axolotl OOM; originally I had some crazy results but there were a number of issues in the training script that made it not match, these should all be fixed now.
 
 * each trainer reports metrics differently into wandb and I couldn't figure out a way to normalize or group them easily, but most of the raw data is there
 
-* torch.compile() gives about a 15% throughput benefit (and about a 10% benefit w/ the extra compilation time) - this is on a small 50K sample set and 1 epoch, so presumably you'll get closer and closer to getting the full benefit if you us torch.compile() (on axolotl theis setting is `torch_compile`)
+* torch.compile() gives about a 15% throughput benefit (and about a 10% benefit w/ the extra compilation time) - this is on a 50K sample set and 1 epoch, so presumably you'll get closer and closer to getting the full benefit if you use torch.compile() for more epochs or on larger datasets (on axolotl this setting is `torch_compile`; note: unsloth can't use this and dies if you set this flag)
 
 
 General conclusions:
