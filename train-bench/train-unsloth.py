@@ -28,7 +28,7 @@ wandb.init(
     name=run_name
 )
 
-
+    
 # 4bit pre quantized models we support for 4x faster downloading + no OOMs.
 fourbit_models = [
 ] # More models at https://huggingface.co/unsloth
@@ -59,35 +59,40 @@ model = FastLanguageModel.get_peft_model(
 
 
 def formatting_prompts_func(example):
-    output_texts = []
-    for i in range(len(example['instruction'])):
-        text = f"### Question: {example['instruction'][i]}\n ### Answer: {example['output'][i]}"
-        output_texts.append(text)
-    return output_texts
+    if example['input']:
+        text = f"### Instruction:\n{example['instruction']}\n\n### Input:\n{example['input']}\n\n### Response:\n{example['output']}"
+    else:
+        text = f"### Instruction:\n{example['instruction']}\n\n### Input:\n{example['input']}\n\n### Response:\n{example['output']}"
+    return text
 
-response_template = " ### Answer:"
-collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer)
+
+# https://huggingface.co/docs/trl/main/en/sft_trainer#train-on-completions-only - incompatible w/ packing
+# collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer)
 
 
 trainer = SFTTrainer(
     model = model,
     train_dataset = dataset,
-    # dataset_text_field = "text",
+    # dataset_text_field = "instruction",
     formatting_func=formatting_prompts_func,
-    data_collator=collator,
+    # data_collator=collator,
+    packing=True,
     max_seq_length = max_seq_length,
     tokenizer = tokenizer,
     args = TrainingArguments(
+        num_train_epochs=1.0,
         per_device_train_batch_size = 2,
         gradient_accumulation_steps = 64,
         warmup_steps = 10,
-        max_steps = 60,
         fp16 = not is_bfloat16_supported(),
         bf16 = is_bfloat16_supported(),
         logging_steps = 1,
         output_dir = "outputs",
         optim = "adamw_8bit",
         seed = 3407,
+        include_tokens_per_second=True,
+        weight_decay=0.00,
+        lr_scheduler_type='cosine', # match torchtune
     ),
 )
 trainer.train()
