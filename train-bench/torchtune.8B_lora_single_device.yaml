@@ -44,7 +44,7 @@ resume_from_checkpoint: False
 # Dataset and Sampler - https://github.com/pytorch/torchtune/blob/59d36e633ed9f1055f08498805df2ea0486657c2/docs/source/tutorials/datasets.rst
 dataset:
   _component_: torchtune.datasets.alpaca_cleaned_dataset
-  max_seq_len: 4096
+  max_seq_len: 2048
   packed: True
 seed: 3407
 shuffle: False
@@ -64,7 +64,7 @@ loss:
 # Training
 epochs: 1
 max_steps_per_epoch: null
-gradient_accumulation_steps: 8
+gradient_accumulation_steps: 64
 compile: False
 
 # Logging - https://pytorch.org/torchtune/stable/generated/torchtune.utils.metric_logging.WandBLogger.html
