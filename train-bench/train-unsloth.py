@@ -82,7 +82,7 @@ trainer = SFTTrainer(
     args = TrainingArguments(
         num_train_epochs=1.0,
         per_device_train_batch_size = 2,
-        gradient_accumulation_steps = 64,
+        gradient_accumulation_steps = 32,
         warmup_steps = 10,
         fp16 = not is_bfloat16_supported(),
         bf16 = is_bfloat16_supported(),
@@ -93,6 +93,7 @@ trainer = SFTTrainer(
         include_tokens_per_second=True,
         weight_decay=0.00,
         lr_scheduler_type='cosine', # match torchtune
+        learning_rate=5e-6, # match torchtune
     ),
 )
 trainer.train()
