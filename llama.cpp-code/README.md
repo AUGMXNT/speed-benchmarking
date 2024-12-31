@@ -53,7 +53,7 @@ Overall, using speculative decoding gives us ~60% higher throughput, and 40% low
 ~/llama.cpp-hjc4869/build/bin/llama-server -m /models/gguf/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf -ngl 99
 
 # Benchmark
-python vllm/benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
+python benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
 
 ============ Serving Benchmark Result ============
 Successful requests:                     50        
@@ -85,7 +85,7 @@ P99 ITL (ms):                            48.79
 ~/llama.cpp-hjc4869/build/bin/llama-server -m /models/gguf/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf -md /models/gguf/Qwen2.5-Coder-1.5B-Instruct-Q8_0.gguf --draft-max 24 --draft-min 1 --draft-p-min 0.6 -ngl 99 -ngld 99
 
 # Benchmark
-python vllm/benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
+python benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
 
 ============ Serving Benchmark Result ============
 Successful requests:                     50        
@@ -144,7 +144,7 @@ Overall, using speculative decoding gives us ~55% higher throughput, and 35% low
 ~/llama.cpp/build/bin/llama-server -m /models/gguf/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf -ngl 99
 
 # Benchmark
-python vllm/benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
+python benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
 
 ============ Serving Benchmark Result ============
 Successful requests:                     50        
@@ -176,7 +176,7 @@ P99 ITL (ms):                            31.17
 ~/llama.cpp/build/bin/llama-server -m /models/gguf/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf -ngl 99 -fa
 
 # Benchmark
-python vllm/benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
+python benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
 
 ============ Serving Benchmark Result ============
 Successful requests:                     50        
@@ -208,7 +208,7 @@ P99 ITL (ms):                            29.34
 ~/llama.cpp-hjc4869/build/bin/llama-server -m /models/gguf/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf -md /models/gguf/Qwen2.5-Coder-1.5B-Instruct-Q8_0.gguf --draft-max 24 --draft-min 1 --draft-p-min 0.6 -ngl 99 -ngld 99
 
 # Benchmark
-python vllm/benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
+python benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
 
 ============ Serving Benchmark Result ============
 Successful requests:                     50        
