@@ -1,0 +1,1 @@
+python benchmarks/benchmark_serving.py --backend openai-chat --host localhost --port 8080 --endpoint='/v1/chat/completions' --model "Qwen/Qwen2.5-Coder-32B-Instruct" --dataset-name sharegpt --dataset-path Python-Code-23k-ShareGPT.json --num-prompts 50 --max-concurrency 1 --seed 1
