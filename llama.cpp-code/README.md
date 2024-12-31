@@ -261,6 +261,55 @@ When using the best results, the RTX 3090 is significantly faster than the W7900
 | Median ITL (ms)                 |                     0.04 |                        0.02 |          -50.0 |
 | P99 ITL (ms)                    |                   310.77 |                      160.18 |          -48.5 |
 
+## llama-bench
+Just for reference. Note that pp512 is 2X faster on the 3090. This makes sense as the CUDA backend primarily uses INT8 and the 3090 has 284 INT8 TOPS vs the W7900's 122.6 FP16 TFLOPS.
+
+The W7900 864.0 GB/s MBW vs the 3090 with 936.2 GB/s (almost the same), so the ROCm backend is significantly less efficient than the CUDA backend.
+
+See also: https://www.reddit.com/r/LocalLLaMA/comments/1ghvwsj/llamacpp_compute_and_memory_bandwidth_efficiency/
+
+### W7900
+```
+❯ ~/llama.cpp-hjc4869/build/bin/llama-bench -m /models/gguf/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf 
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Radeon Pro W7900, compute capability 11.0, VMM: no
+| model                          |       size |     params | backend    | ngl |          test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------------: | -------------------: |
+| qwen2 32B Q4_K - Medium        |  18.48 GiB |    32.76 B | ROCm       |  99 |         pp512 |        663.44 ± 1.50 |
+| qwen2 32B Q4_K - Medium        |  18.48 GiB |    32.76 B | ROCm       |  99 |         tg128 |         23.00 ± 0.06 |
+
+build: a0c09b1c (4398)
+```
+
+### RTX 3090
+```
+❯ CUDA_VISIBLE_DEVICES=1 build/bin/llama-bench -m /models/llm/gguf/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf 
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 CUDA devices:
+  Device 0: NVIDIA GeForce RTX 3090, compute capability 8.6, VMM: yes
+| model                          |       size |     params | backend    | ngl |          test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------------: | -------------------: |
+| qwen2 32B Q4_K - Medium        |  18.48 GiB |    32.76 B | CUDA       |  99 |         pp512 |       1294.03 ± 7.76 |
+| qwen2 32B Q4_K - Medium        |  18.48 GiB |    32.76 B | CUDA       |  99 |         tg128 |         37.71 ± 0.15 |
+
+build: 6e1531ac (4400)
+
+❯ CUDA_VISIBLE_DEVICES=1 build/bin/llama-bench -m /models/llm/gguf/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf -fa 1
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 CUDA devices:
+  Device 0: NVIDIA GeForce RTX 3090, compute capability 8.6, VMM: yes
+| model                          |       size |     params | backend    | ngl | fa |          test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | -: | ------------: | -------------------: |
+| qwen2 32B Q4_K - Medium        |  18.48 GiB |    32.76 B | CUDA       |  99 |  1 |         pp512 |      1335.70 ± 25.01 |
+| qwen2 32B Q4_K - Medium        |  18.48 GiB |    32.76 B | CUDA       |  99 |  1 |         tg128 |         38.34 ± 0.15 |
+
+build: 6e1531ac (4400)
+```
+
 
 # Future
 Do broader testing with? (maybe be overfitted)
