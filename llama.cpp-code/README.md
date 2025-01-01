@@ -237,8 +237,8 @@ P99 ITL (ms):                            160.18
 ## W7900 vs RTX 3090
 
 When using the best results, the RTX 3090 is significantly faster than the W7900:
-- >60% higher throughput
-- >70% lower median TTFT
+- \>60% higher throughput
+- \>70% lower median TTFT
 - ~37% lower TPOT
 
 | Metric                          |   W7900 Q4_K_M + 1.5B Q8 |   RTX 3090 Q4_K_M + 1.5B Q8 |   % Difference |
