@@ -261,6 +261,19 @@ When using the best results, the RTX 3090 is significantly faster than the W7900
 | Median ITL (ms)                 |                     0.04 |                        0.02 |          -50.0 |
 | P99 ITL (ms)                    |                   310.77 |                      160.18 |          -48.5 |
 
+### Power Consumption
+In [followup discussion](https://www.reddit.com/r/LocalLLaMA/comments/1hqlug2/revisting_llamacpp_speculative_decoding_w/), power was brought up as an interesting comparison point as well. You can use `nvidia-smi` and `rocm-smi` to measure power on a per-second basis:
+
+```
+# nvidia
+nvidia-smi --query-gpu=timestamp,power.draw --format=csv -l 1 | tee power_usage.csv
+
+# amd
+while true; do echo "$(date --iso-8601=seconds),$(rocm-smi --showpower --json | jq -r '.card0["Average Graphics Package Power (W)"]')" | tee -a power_usage.csv; sleep 1; done
+```
+
+Doing some [ad hoc testing](https://www.reddit.com/r/LocalLLaMA/comments/1hqlug2/comment/m4t2t5y/) showed the W7900 using 238W (241W PL, VBIOS MAX) and the 3090 (more variance) at about 323W (420W PL, VBIOS MAX is 450W). You can use this to [calculate tokens/joule](https://chatgpt.com/share/6774e3f5-f468-8012-b951-873a61a0bd38) - the 3090 is about 20% more efficient (from my previous [3090 power curve testing](https://www.reddit.com/r/LocalLLaMA/comments/1hg6qrd/relative_performance_in_llamacpp_when_adjusting/), it should be possible to increase efficiency if that's a goal). My specific 3090 idles at 14W vs 20W for the W7900, but I suspect the former will differ greatly on a card-by-card basis.
+
 ## llama-bench
 Just for reference. Note that pp512 is 2X faster on the 3090. This makes sense as the CUDA backend primarily uses INT8 and the 3090 has 284 INT8 TOPS vs the W7900's 122.6 FP16 TFLOPS.
 
