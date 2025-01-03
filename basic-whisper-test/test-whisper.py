@@ -64,7 +64,9 @@ def process_sample(pipe, sample, sample_id=None):
 
 # Setup device and dtype
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
-torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+if torch.xpu.is_available():
+    device = "xpu" 
+torch_dtype = torch.float16 if device != "cpu" else torch.float32
 
 # Load model with timing
 with timing_context("Loading Model"):
