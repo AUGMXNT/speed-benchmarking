@@ -24,6 +24,22 @@ Inference time: 2.06 seconds
 Real-time factor: 0.03x
 Real-time X: 30.34x
 
+## RTX 3090
+Audio duration: 62.45 seconds
+Audio size: (999280,)
+Sampling rate: 16000 Hz
+Inference time: 1.19 seconds
+Real-time factor: 0.02x
+Real-time X: 52.49x
+
+## RTX 4090
+Audio duration: 62.45 seconds
+Audio size: (999280,)
+Sampling rate: 16000 Hz
+Inference time: 1.09 seconds
+Real-time factor: 0.02x
+Real-time X: 57.44x
+
 ## W7900
 Audio duration: 62.45 seconds
 Audio size: (999280,)
