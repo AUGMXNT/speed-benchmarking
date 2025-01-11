@@ -1,0 +1,68 @@
+Jan 07 22:13:00 epyc kernel: [Hardware Error]: It has been corrected by h/w and requires no further action
+Jan 07 22:13:00 epyc kernel: [Hardware Error]: event severity: corrected
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:  Error 0, type: corrected
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:  fru_text: Locator: P0MF1
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:   section_type: memory error
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:    error_status: Storage error in DRAM memory (0x0000000000040400)
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:   physical_address: 0x00000050879413c0
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:   node:0 card:5 module:1 rank:2 bank:4 row:54761 column:80 
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:  Error 1, type: corrected
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:  fru_text: Locator: P0MH1
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:   section_type: memory error
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:    error_status: Storage error in DRAM memory (0x0000000000040400)
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:   physical_address: 0x000000109cd57200
+Jan 07 22:13:00 epyc kernel: [Hardware Error]:   node:0 card:7 module:1 rank:3 bank:16 row:11127 column:96 
+Jan 08 19:59:15 epyc kernel: mce: [Hardware Error]: Machine check events logged
+Jan 08 19:59:15 epyc kernel: [Hardware Error]: Corrected error, no action required.
+Jan 08 19:59:15 epyc kernel: [Hardware Error]: CPU:20 (19:11:1) MC21_STATUS[Over|CE|-|AddrV|-|-|SyndV|CECC|-|-|-]: 0xd42040000400011b
+Jan 08 19:59:15 epyc kernel: [Hardware Error]: Error Addr: 0x000000017f0c0540
+Jan 08 19:59:15 epyc kernel: [Hardware Error]: PPIN: 0x02b63d8fb121005a
+Jan 08 19:59:15 epyc kernel: [Hardware Error]: IPID: 0x0000009600a50f00, Syndrome: 0xb732d0000a800703
+Jan 08 19:59:15 epyc kernel: [Hardware Error]: FRU Text: Locator: P0MH1
+Jan 08 19:59:15 epyc kernel: [Hardware Error]: Unified Memory Controller Ext. Error Code: 0
+Jan 08 19:59:15 epyc kernel: [Hardware Error]: cache level: L3/GEN, tx: GEN, mem-tx: RD
+Jan 11 18:49:34 epyc kernel: mce: [Hardware Error]: Machine check events logged
+Jan 11 18:49:34 epyc kernel: [Hardware Error]: Corrected error, no action required.
+Jan 11 18:49:34 epyc kernel: [Hardware Error]: CPU:20 (19:11:1) MC22_STATUS[Over|CE|-|AddrV|-|-|SyndV|CECC|-|-|-]: 0xd42040000400011b
+Jan 11 18:49:34 epyc kernel: [Hardware Error]: Error Addr: 0x0000000039832800
+Jan 11 18:49:34 epyc kernel: [Hardware Error]: PPIN: 0x02b63d8fb121005a
+Jan 11 18:49:34 epyc kernel: [Hardware Error]: IPID: 0x0000009600b50f00, Syndrome: 0xd23020000a80040a
+Jan 11 18:49:34 epyc kernel: [Hardware Error]: FRU Text: Locator: P0MJ1
+Jan 11 18:49:34 epyc kernel: [Hardware Error]: Unified Memory Controller Ext. Error Code: 0
+Jan 11 18:49:34 epyc kernel: [Hardware Error]: cache level: L3/GEN, tx: GEN, mem-tx: RD
+Jan 11 18:54:48 epyc kernel: mce: [Hardware Error]: Machine check events logged
+Jan 11 18:54:48 epyc kernel: [Hardware Error]: Corrected error, no action required.
+Jan 11 18:54:48 epyc kernel: [Hardware Error]: CPU:20 (19:11:1) MC22_STATUS[Over|CE|-|AddrV|-|-|SyndV|CECC|-|-|-]: 0xd42040000400011b
+Jan 11 18:54:48 epyc kernel: [Hardware Error]: Error Addr: 0x0000000039832800
+Jan 11 18:54:48 epyc kernel: [Hardware Error]: PPIN: 0x02b63d8fb121005a
+Jan 11 18:54:48 epyc kernel: [Hardware Error]: IPID: 0x0000009600b50f00, Syndrome: 0xd23020000a80040a
+Jan 11 18:54:48 epyc kernel: [Hardware Error]: FRU Text: Locator: P0MJ1
+Jan 11 18:54:48 epyc kernel: [Hardware Error]: Unified Memory Controller Ext. Error Code: 0
+Jan 11 18:54:48 epyc kernel: [Hardware Error]: cache level: L3/GEN, tx: GEN, mem-tx: RD
+Jan 11 19:05:16 epyc kernel: mce: [Hardware Error]: Machine check events logged
+Jan 11 19:05:16 epyc kernel: [Hardware Error]: Corrected error, no action required.
+Jan 11 19:05:16 epyc kernel: [Hardware Error]: CPU:20 (19:11:1) MC22_STATUS[Over|CE|-|AddrV|-|-|SyndV|CECC|-|-|-]: 0xd42040000400011b
+Jan 11 19:05:16 epyc kernel: [Hardware Error]: Error Addr: 0x0000000034051f00
+Jan 11 19:05:16 epyc kernel: [Hardware Error]: PPIN: 0x02b63d8fb121005a
+Jan 11 19:05:16 epyc kernel: [Hardware Error]: IPID: 0x0000009600b50f00, Syndrome: 0x0c93c0000a80040a
+Jan 11 19:05:16 epyc kernel: [Hardware Error]: FRU Text: Locator: P0MJ1
+Jan 11 19:05:16 epyc kernel: [Hardware Error]: Unified Memory Controller Ext. Error Code: 0
+Jan 11 19:05:16 epyc kernel: [Hardware Error]: cache level: L3/GEN, tx: GEN, mem-tx: RD
+Jan 11 19:10:30 epyc kernel: mce: [Hardware Error]: Machine check events logged
+Jan 11 19:10:30 epyc kernel: [Hardware Error]: Corrected error, no action required.
+Jan 11 19:10:30 epyc kernel: [Hardware Error]: CPU:20 (19:11:1) MC22_STATUS[Over|CE|-|AddrV|-|-|SyndV|CECC|-|-|-]: 0xd42040000400011b
+Jan 11 19:10:30 epyc kernel: [Hardware Error]: Error Addr: 0x0000000038155440
+Jan 11 19:10:30 epyc kernel: [Hardware Error]: PPIN: 0x02b63d8fb121005a
+Jan 11 19:10:30 epyc kernel: [Hardware Error]: IPID: 0x0000009600b50f00, Syndrome: 0x61fa90000a80040a
+Jan 11 19:10:30 epyc kernel: [Hardware Error]: FRU Text: Locator: P0MJ1
+Jan 11 19:10:30 epyc kernel: [Hardware Error]: Unified Memory Controller Ext. Error Code: 0
+Jan 11 19:10:30 epyc kernel: [Hardware Error]: cache level: L3/GEN, tx: GEN, mem-tx: RD
+Jan 11 19:15:44 epyc kernel: mce: [Hardware Error]: Machine check events logged
+Jan 11 19:15:44 epyc kernel: [Hardware Error]: Corrected error, no action required.
+Jan 11 19:15:44 epyc kernel: [Hardware Error]: CPU:20 (19:11:1) MC22_STATUS[Over|CE|-|AddrV|-|-|SyndV|CECC|-|-|-]: 0xd42040000400011b
+Jan 11 19:15:44 epyc kernel: [Hardware Error]: Error Addr: 0x00000000322d1300
+Jan 11 19:15:44 epyc kernel: [Hardware Error]: PPIN: 0x02b63d8fb121005a
+Jan 11 19:15:44 epyc kernel: [Hardware Error]: IPID: 0x0000009600b50f00, Syndrome: 0xd64160000a80040a
+Jan 11 19:15:44 epyc kernel: [Hardware Error]: FRU Text: Locator: P0MJ1
+Jan 11 19:15:44 epyc kernel: [Hardware Error]: Unified Memory Controller Ext. Error Code: 0
+Jan 11 19:15:44 epyc kernel: [Hardware Error]: cache level: L3/GEN, tx: GEN, mem-tx: RD

@@ -1,0 +1,24 @@
+Results for results-nps1:
+{
+    "likwid_copy": 172.43884765625,
+    "likwid_stream": 173.1712890625,
+    "likwid_triad": 172.7201953125,
+    "sysbench_memory_read_gib": 149.161591796875,
+    "llama_llama-2-7b.Q4_0": {
+        "tokens_per_second": 38.210778,
+        "model_size_gb": 3.5623703002929688,
+        "mbw": 136.12094069828797
+    }
+}
+Results for results-nps4-srat-l3:
+{
+    "likwid_copy": 170.17099609375,
+    "likwid_stream": 172.404462890625,
+    "likwid_triad": 172.08884765625,
+    "sysbench_memory_read_gib": 187.1775009765625,
+    "llama_llama-2-7b.Q4_0": {
+        "tokens_per_second": 36.022136,
+        "model_size_gb": 3.5623703002929688,
+        "mbw": 128.32418743951416
+    }
+}

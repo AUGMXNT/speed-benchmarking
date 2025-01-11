@@ -1,0 +1,48 @@
+# paru -S intel-mlc
+
+🐟 ❯ mlc --idle_latency
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency
+
+Using buffer size of 1800.000MiB
+
+*************   Hugepages need to be allocated using /proc/sys/vm/nr_hugepages ******
+*************   Without large pages, the latencies are not accurate
+*************   We need at least 1000 2M pages per numa node
+*************   Adjust 4000 below to account for # of NUMA nodes
+*************   and execute the following and re-run
+*************   echo 4000 > /proc/sys/vm/nr_hugepages
+
+🐟 ❯ sudo -s
+
+❯ echo 32000 > /proc/sys/vm/nr_hugepages
+
+❯ mlc --idle_latency
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency
+
+Using buffer size of 1800.000MiB
+Each iteration took 424.8 base frequency clocks (       104.9   ns)
+
+❯ mlc --bandwidth_matrix
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix
+
+Using buffer size of 100.000MiB/thread for reads and an additional 100.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+                Numa node
+Numa node            0       1       2       3       4       5       6       7
+       0        45999.8 46036.3 50490.7 50529.7 50421.0 50427.6 50433.5 52118.2
+       1        46099.1 46129.9 52768.3 52122.3 52086.5 52767.6 52122.6 52093.4
+       2        46006.3 46095.3 52117.0 52097.2 50385.2 52088.5 50396.1 52077.4
+       3        46092.6 46091.5 52153.6 52123.4 52140.3 52134.8 52078.8 52076.1
+       4        45718.9 46053.1 52087.3 52124.0 52144.8 50544.5 50492.7 52125.1
+       5        46093.7 46107.4 52082.0 52091.2 52147.5 52759.1 52163.7 52179.9
+       6        45915.9 45988.2 50412.8 50411.3 50490.8 50473.9 52136.1 52084.9
+       7        46134.4 46017.2 52088.9 52114.1 52125.0 52152.9 52056.6 52115.1
+
+/home/lhl/github/AUGMXNT/speed-benchmarking/epyc-mbw-testing main* 7m 39s
+
