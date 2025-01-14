@@ -1,0 +1,476 @@
+# corefreq-cli -k -s -m -z -M > corefreq-cli.txt
+
+Linux:                                                                          
+|- Release                                               [6.13.0-rc6-1-mainline]
+|- Version              [#1 SMP PREEMPT_DYNAMIC Tue, 07 Jan 2025 12:24:19 +0000]
+|- Machine                                                              [x86_64]
+Memory:                                                                         
+|- Total RAM                                                        395934440 KB
+|- Shared RAM                                                           23704 KB
+|- Free RAM                                                         375064980 KB
+|- Buffer RAM                                                           12064 KB
+|- Total High                                                               0 KB
+|- Free High                                                                0 KB
+Clock Source                                                  <             tsc>
+CPU-Freq driver                                               [    acpi-cpufreq]
+Governor                                                      [       schedutil]
+CPU-Idle driver                                               [       acpi_idle]
+|- Idle Limit                                                 [              C2]
+   |- State        POLL      C1      C2                                         
+   |-           CPUIDLE ACPI FF ACPI IO                                         
+   |- Power          -1       0       0                                         
+   |- Latency         0       1     800                                         
+   |- Residency       0       2    1600                                         
+Processor                                     [AMD EPYC 9274F 24-Core Processor]
+|- PPIN#                                                      [ 2b63d8fb121005a]
+|- Architecture                                                     [EPYC/Genoa]
+|- Vendor ID                                                      [AuthenticAMD]
+|- Firmware                                                        [ 71.123.0-5]
+|- Microcode                                                        [0x0a101148]
+|- Signature                                                           [  AF_11]
+|- Stepping                                                            [      1]
+|- Online CPU                                                          [ 48/ 48]
+|- Base Clock                                                          [101.248]
+|- Frequency            (MHz)                      Ratio                        
+                 Min   1518.73                    <  15 >                       
+                 Max   4049.94                    <  40 >                       
+|- Factory                                                             [100.000]
+                       4000                       [  40 ]                       
+|- Performance                                                                  
+                 TGT   1518.73                    <  15 >                       
+   |- Boost                                                            [   LOCK]
+                 XFR   4353.68                    [  43 ]                       
+                 CPB   4353.68                    [  43 ]                       
+   |- P-State                                                                   
+                 P1    2733.71                    <  27 >                       
+                 P2    1518.73                    <  15 >                       
+|- Uncore                                                              [   LOCK]
+                 CLK   2429.96                    [  24 ]                       
+                 MEM   2429.96                    [  24 ]                       
+                                                                                
+Instruction Set Extensions                                                      
+|- 3DNow!/Ext [N/N]          ADX [Y]          AES [Y]  AVX/AVX2 [Y/Y] 
+|- AVX512-F     [Y]    AVX512-DQ [Y]  AVX512-IFMA [Y]   AVX512-PF [N] 
+|- AVX512-ER    [N]    AVX512-CD [Y]    AVX512-BW [Y]   AVX512-VL [Y] 
+|- AVX512-VBMI  [Y] AVX512-VBMI2 [Y]  AVX512-VNNI [Y]  AVX512-ALG [Y] 
+|- AVX512-VPOP  [Y] AVX512-VNNIW [N] AVX512-FMAPS [N] AVX512-VP2I [N] 
+|- AVX512-BF16  [Y] AVX-VNNI-VEX [N]    AVX-FP128 [N]   AVX-FP256 [Y] 
+|- BMI1/BMI2  [Y/Y]         CLWB [Y]      CLFLUSH [Y] CLFLUSH-OPT [Y] 
+|- CLAC-STAC    [Y]         CMOV [Y]    CMPXCHG8B [Y]  CMPXCHG16B [Y] 
+|- F16C         [Y]          FPU [Y]         FXSR [Y]   LAHF-SAHF [Y] 
+|- MMX/Ext    [Y/Y] MON/MWAITX [Y/Y]        MOVBE [Y]   PCLMULQDQ [Y] 
+|- POPCNT       [Y]       RDRAND [Y]       RDSEED [Y]      RDTSCP [Y] 
+|- SEP          [Y]          SHA [Y]          SSE [Y]        SSE2 [Y] 
+|- SSE3         [Y]        SSSE3 [Y]  SSE4.1/4A [Y/Y]      SSE4.2 [Y] 
+|- SERIALIZE    [N]      SYSCALL [Y]        RDPID [Y]        UMIP [Y] 
+|- VAES         [Y]   VPCLMULQDQ [Y]   PREFETCH/W [Y]       LZCNT [Y] 
+                                                                                
+Features                                                                        
+|- 1 GB Pages Support                                      1GB-PAGES   [Capable]
+|- 100 MHz multiplier Control                            100MHzSteps   [Missing]
+|- Advanced Configuration & Power Interface                     ACPI   [Capable]
+|- Advanced Programmable Interrupt Controller                   APIC   [Capable]
+|- Advanced Virtual Interrupt Controller                        AVIC   [Capable]
+|- APIC Timer Invariance                                        ARAT   [Capable]
+|- LOCK prefix to read CR8                                    AltMov   [Capable]
+|- Clear Zero Instruction                                     CLZERO   [Capable]
+|- Core Multi-Processing                                  CMP Legacy   [Capable]
+|- L1 Data Cache Context ID                                  CNXT-ID   [Missing]
+|- Collaborative Processor Performance Control                  CPPC   [Capable]
+|- Direct Cache Access                                           DCA   [Missing]
+|- Debugging Extension                                            DE   [Capable]
+|- Debug Store & Precise Event Based Sampling               DS, PEBS   [Missing]
+|- CPL Qualified Debug Store                                  DS-CPL   [Missing]
+|- 64-Bit Debug Store                                         DTES64   [Missing]
+|- Fast Short REP CMPSB|SCASB                                   FSRC   [Capable]
+|- Fast Short REP MOVSB                                         FSRM   [Capable]
+|- Fast Short REP STOSB                                         FSRS   [Capable]
+|- Fast-String Operation                                        ERMS   [Capable]
+|- Fused Multiply Add                                           FMA4   [Missing]
+|- Fused Multiply Add                                            FMA   [Capable]
+|- Hardware Lock Elision                                         HLE   [Missing]
+|- Hyper-Threading Technology                                    HTT   [Capable]
+|- Hardware P-state control                                      HwP   [Capable]
+|- Instruction Based Sampling                                    IBS   [Capable]
+|- Instruction INVLPGB                                       INVLPGB   [Capable]
+|- Instruction INVPCID                                       INVPCID   [Capable]
+|- Long Mode 64 bits                                       IA64 | LM   [Capable]
+|- LightWeight Profiling                                         LWP   [Missing]
+|- Memory Bandwidth Enforcement                                  MBE   [Capable]
+|- Machine-Check Architecture                                    MCA   [Capable]
+|- Instruction MCOMMIT                                       MCOMMIT   [Missing]
+|- Model Specific Registers                                      MSR   [Capable]
+|- Memory Type Range Registers                                  MTRR   [Capable]
+|- No-Execute Page Protection                                     NX   [Capable]
+|- OS-Enabled Ext. State Management                          OSXSAVE   [Capable]
+|- OS Visible Work-around                                       OSVW   [Capable]
+|- Physical Address Extension                                    PAE   [Capable]
+|- Page Attribute Table                                          PAT   [Capable]
+|- Pending Break Enable                                          PBE   [Missing]
+|- Process Context Identifiers                                  PCID   [Capable]
+|- Perfmon and Debug Capability                                 PDCM   [Missing]
+|- Page Global Enable                                            PGE   [Capable]
+|- Page Size Extension                                           PSE   [Capable]
+|- 36-bit Page Size Extension                                  PSE36   [Capable]
+|- Processor Serial Number                                       PSN   [Missing]
+|- PREFETCHIT0/1 Instructions                              PREFETCHI   [Missing]
+|- Resource Director Technology/PQE                            RDT-A   [Capable]
+|- Resource Director Technology/PQM                            RDT-M   [Capable]
+|- Read Processor Register at User level                       RDPRU   [Capable]
+|- Restricted Transactional Memory                               RTM   [Missing]
+|- Safer Mode Extensions                                         SMX   [Missing]
+|- Self-Snoop                                                     SS   [Missing]
+|- Supervisor-Mode Access Prevention                            SMAP   [Capable]
+|- Supervisor-Mode Execution Prevention                         SMEP   [Capable]
+|- Trailing Bit Manipulation                                     TBM   [Missing]
+|- Translation Cache Extension                                   TCE   [Capable]
+|- Time Stamp Counter                                            TSC [Invariant]
+|- Time Stamp Counter Deadline                          TSC-DEADLINE   [Missing]
+|- TSX Force Abort MSR Register                            TSX-ABORT   [Missing]
+|- TSX Suspend Load Address Tracking                       TSX-LDTRK   [Missing]
+|- User-Mode Instruction Prevention                             UMIP   [Capable]
+|- Virtual Mode Extension                                        VME   [Capable]
+|- Virtual Machine Extensions                                    VMX   [Missing]
+|- Write Back & Do Not Invalidate Cache                     WBNOINVD   [Capable]
+|- Extended xAPIC Support                                     x2APIC   [ x2APIC]
+|- AVIC controller for x2APIC                                 x2AVIC   [Capable]
+|- XSAVE/XSTOR States                                          XSAVE   [Capable]
+|- xTPR Update Control                                          xTPR   [Missing]
+|- Extended Operation Support                                    XOP   [Missing]
+Mitigation mechanisms                                                           
+|- Indirect Branch Restricted Speculation                       IBRS   [Capable]
+   |- IBRS Always-On preferred by processor                            [ Unable]
+   |- IBRS preferred over software solution                            [Capable]
+   |- IBRS provides same speculation limits                            [Capable]
+|- Indirect Branch Prediction Barrier                           IBPB   [Capable]
+|- Selective Branch Predictor Barrier                           SBPB   [ Unable]
+|- Single Thread Indirect Branch Predictor                     STIBP   [ Enable]
+|- Speculative Store Bypass Disable                             SSBD   [Capable]
+   |- SSBD use VIRT_SPEC_CTRL register                                 [ Unable]
+   |- SSBD not needed on this processor                                [ Unable]
+|- No Speculative Return Stack Overflow                      SRSO_NO   [ Unable]
+   |- No SRSO at the User-Kernel boundary                              [ Unable]
+|- No Branch Type Confusion                                   BTC_NO   [Capable]
+|- BTC on Non-Branch instruction                            BTC-NOBR   [ Unable]
+|- Limited Early Redirect Window                            AGENPICK   [ Unable]
+|- Arch - No Fast Predictive Store Forwarding                   PSFD   [Capable]
+|- Arch - Enhanced Predictive Store Forwarding                  EPSF   [Capable]
+|- Arch - Cross Processor Information Leak                XPROC_LEAK   [ Unable]
+Security Features                                                               
+|- CET Shadow Stack features                                  CET-SS   [Capable]
+|- Secure Init and Jump with Attestation                      SKINIT   [Capable]
+|- Secure Encrypted Virtualization                               SEV   [Capable]
+|- SEV - Encrypted State                                      SEV-ES   [Capable]
+|- SEV - Secure Nested Paging                                SEV-SNP   [Capable]
+|- Guest Mode Execute Trap                                      GMET   [Capable]
+|- Supervisor Shadow Stack                                       SSS   [Capable]
+|- VM Permission Levels                                         VMPL   [Capable]
+|- VMPL Supervisor Shadow Stack                             VMPL-SSS   [Capable]
+|- Secure Memory Encryption                                      SME   [Capable]
+|- Transparent SME                                              TSME   [ Enable]
+|- Secure Multi-Key Memory Encryption                         SME-MK   [Capable]
+|- DRAM Data Scrambling                                    Scrambler   [ Enable]
+                                                                                
+Technologies                                                                    
+|- Instruction Cache Unit                                                       
+   |- L1 IP Prefetcher                                          L1 HW IP   < ON>
+|- Data Cache Unit                                                              
+   |- L1 Prefetcher                                                L1 HW   < ON>
+|- Cache Prefetchers                                                            
+   |- L2 Prefetcher                                                L2 HW   < ON>
+   |- L1 Stride Prefetcher                                     L1 Stride   < ON>
+   |- L1 Region Prefetcher                                     L1 Region   < ON>
+   |- L1 Burst Prefetch Mode                                    L1 Burst   < ON>
+   |- L2 Stream HW Prefetcher                                  L2 Stream   < ON>
+   |- L2 Up/Down Prefetcher                                   L2 Up/Down   < ON>
+|- System Management Mode                                       SMM-Lock   [ ON]
+|- Simultaneous Multithreading                                       SMT   [ ON]
+|- PowerNow!                                                         CnQ   [ ON]
+|- Core C-States                                                     CCx   [ ON]
+|- Core Performance Boost                                            CPB   < ON>
+|- Watchdog Timer                                                    WDT   < ON>
+|- Virtualization                                                    SVM   [ ON]
+   |- I/O MMU                                                      AMD-V   [ ON]
+   |- Version                                                     [         0.1]
+   |- Hypervisor                                                           [OFF]
+   |- Vendor ID                                                   [         N/A]
+                                                                                
+Performance Monitoring                                                          
+|- Version                                                        PM       [  2]
+|- Counters:          General                   Fixed                           
+|           {  6,  6, 16 } x 48 bits            3 x 64 bits                     
+|- Enhanced Halt State                                           C1E       <OFF>
+|- C2 UnDemotion                                                 C2U       < ON>
+|- C3 UnDemotion                                                 C3U       < ON>
+|- Core C6 State                                                 CC6       < ON>
+|- Package C6 State                                              PC6       <OFF>
+|- Legacy Frequency ID control                                   FID       [OFF]
+|- Legacy Voltage ID control                                     VID       [OFF]
+|- P-State Hardware Coordination Feedback                MPERF/APERF       [ ON]
+|- Core C-States                                                                
+   |- C-States Base Address                                      BAR   [ 0x813 ]
+|- ACPI Processor C-States                                      _CST   [      2]
+|- MONITOR/MWAIT                                                                
+   |- State index:    #0    #1    #2    #3    #4    #5    #6    #7              
+   |- Sub C-State:     1     1     0     0     0     0     0     0              
+   |- Monitor-Mwait Extensions                                   EMX   [Capable]
+   |- Interrupt Break-Event                                      IBE   [Capable]
+|- Core Cycles                                                         [Capable]
+|- Instructions Retired                                                [Capable]
+|- Reference Cycles                                                    [Capable]
+|- Last Level Cache References                                         [Capable]
+|- Global Time Stamp Counter                                           [Missing]
+|- Data Fabric Performance Counter                                     [Capable]
+|- Core Performance Counter                                            [Capable]
+|- Processor Performance Control                                _PCT   [ Enable]
+|- Performance Supported States                                 _PSS   [      3]
+|- Performance Present Capabilities                             _PPC   [      0]
+|- Continuous Performance Control                               _CPC   [Missing]
+                                                                                
+Power, Current & Thermal                                                        
+|- Temperature Offset:Junction                                 TjMax [ 49: 95 C]
+|- CPPC Energy Preference                                        EPP   [Capable]
+|- Digital Thermal Sensor                                        DTS   [Capable]
+|- Power Limit Notification                                      PLN   [Missing]
+|- Package Thermal Management                                    PTM   [Missing]
+|- Thermal Monitor 1                                             TTP   [ Enable]
+|- Thermal Monitor 2                                             HTC   [ Enable]
+|- Thermal Design Power                                          TDP   [Missing]
+   |- Minimum Power                                              Min   [Missing]
+   |- Maximum Power                                              Max   [Missing]
+|- Thermal Design Power                                      Package   < Enable>
+   |- Power Limit                                                PL1   <  320 W>
+   |- Time Window                                                TW1   <   0 ns>
+   |- Power Limit                                                PL2   <  400 W>
+   |- Time Window                                                TW2   <   0 ns>
+|- Thermal Design Power                                         Core   [Disable]
+   |- Power Limit                                                PL1   [    0 W]
+   |- Time Window                                                TW1   [   0 ns]
+|- Thermal Design Power                                       Uncore   [Disable]
+   |- Power Limit                                                PL1   [    0 W]
+   |- Time Window                                                TW1   [   0 ns]
+|- Thermal Design Power                                         DRAM   [Disable]
+   |- Power Limit                                                PL1   [    0 W]
+   |- Time Window                                                TW1   [   0 ns]
+|- Thermal Design Power                                     Platform   [Disable]
+   |- Power Limit                                                PL1   [    0 W]
+   |- Time Window                                                TW1   [   0 ns]
+   |- Power Limit                                                PL2   [    0 W]
+   |- Time Window                                                TW2   [   0 ns]
+|- Package Power Tracking                                        PPT   [Missing]
+|- Electrical Design Current                                     EDC   [Missing]
+|- Thermal Design Current                                        TDC   [Missing]
+|- Core Thermal Point                                                           
+|- Package Thermal Point                                                        
+   |- Thermal Monitor Trip                                     Limit   [  115 C]
+   |- HTC Temperature Limit                                    Limit   [    0 C]
+   |- HTC Temperature Hysteresis                           Threshold   [    0 C]
+|- Units                                                                        
+   |- Power                                               watt   [      Missing]
+   |- Energy                                             joule   [  0.000015259]
+   |- Window                                            second   [  0.000976562]
+CPU Pkg  Apic  Core/Thread  Caches      (w)rite-Back (i)nclusive              
+ #   ID   ID CCD CCX ID/ID L1-Inst Way  L1-Data Way      L2  Way      L3  Way 
+000:BSP    0   0  0   0  0      32  8        32  8      1024  8 i  262144 16w 
+001:  0    2   0  0   1  0      32  8        32  8      1024  8 i  262144 16w 
+002:  0    4   0  0   2  0      32  8        32  8      1024  8 i  262144 16w 
+003:  0   64   4  8  32  0      32  8        32  8      1024  8 i  262144 16w 
+004:  0   66   4  8  33  0      32  8        32  8      1024  8 i  262144 16w 
+005:  0   68   4  8  34  0      32  8        32  8      1024  8 i  262144 16w 
+006:  0   32   2  4  16  0      32  8        32  8      1024  8 i  262144 16w 
+007:  0   34   2  4  17  0      32  8        32  8      1024  8 i  262144 16w 
+008:  0   36   2  4  18  0      32  8        32  8      1024  8 i  262144 16w 
+009:  0   96   6 12  48  0      32  8        32  8      1024  8 i  262144 16w 
+010:  0   98   6 12  49  0      32  8        32  8      1024  8 i  262144 16w 
+011:  0  100   6 12  50  0      32  8        32  8      1024  8 i  262144 16w 
+012:  0   48   3  6  24  0      32  8        32  8      1024  8 i  262144 16w 
+013:  0   50   3  6  25  0      32  8        32  8      1024  8 i  262144 16w 
+014:  0   52   3  6  26  0      32  8        32  8      1024  8 i  262144 16w 
+015:  0  112   7 14  56  0      32  8        32  8      1024  8 i  262144 16w 
+016:  0  114   7 14  57  0      32  8        32  8      1024  8 i  262144 16w 
+017:  0  116   7 14  58  0      32  8        32  8      1024  8 i  262144 16w 
+018:  0   16   1  2   8  0      32  8        32  8      1024  8 i  262144 16w 
+019:  0   18   1  2   9  0      32  8        32  8      1024  8 i  262144 16w 
+020:  0   20   1  2  10  0      32  8        32  8      1024  8 i  262144 16w 
+021:  0   80   5 10  40  0      32  8        32  8      1024  8 i  262144 16w 
+022:  0   82   5 10  41  0      32  8        32  8      1024  8 i  262144 16w 
+023:  0   84   5 10  42  0      32  8        32  8      1024  8 i  262144 16w 
+024:  0    1   0  0   0  1      32  8        32  8      1024  8 i  262144 16w 
+025:  0    3   0  0   1  1      32  8        32  8      1024  8 i  262144 16w 
+026:  0    5   0  0   2  1      32  8        32  8      1024  8 i  262144 16w 
+027:  0   65   4  8  32  1      32  8        32  8      1024  8 i  262144 16w 
+028:  0   67   4  8  33  1      32  8        32  8      1024  8 i  262144 16w 
+029:  0   69   4  8  34  1      32  8        32  8      1024  8 i  262144 16w 
+030:  0   33   2  4  16  1      32  8        32  8      1024  8 i  262144 16w 
+031:  0   35   2  4  17  1      32  8        32  8      1024  8 i  262144 16w 
+032:  0   37   2  4  18  1      32  8        32  8      1024  8 i  262144 16w 
+033:  0   97   6 12  48  1      32  8        32  8      1024  8 i  262144 16w 
+034:  0   99   6 12  49  1      32  8        32  8      1024  8 i  262144 16w 
+035:  0  101   6 12  50  1      32  8        32  8      1024  8 i  262144 16w 
+036:  0   49   3  6  24  1      32  8        32  8      1024  8 i  262144 16w 
+037:  0   51   3  6  25  1      32  8        32  8      1024  8 i  262144 16w 
+038:  0   53   3  6  26  1      32  8        32  8      1024  8 i  262144 16w 
+039:  0  113   7 14  56  1      32  8        32  8      1024  8 i  262144 16w 
+040:  0  115   7 14  57  1      32  8        32  8      1024  8 i  262144 16w 
+041:  0  117   7 14  58  1      32  8        32  8      1024  8 i  262144 16w 
+042:  0   17   1  2   8  1      32  8        32  8      1024  8 i  262144 16w 
+043:  0   19   1  2   9  1      32  8        32  8      1024  8 i  262144 16w 
+044:  0   21   1  2  10  1      32  8        32  8      1024  8 i  262144 16w 
+045:  0   81   5 10  40  1      32  8        32  8      1024  8 i  262144 16w 
+046:  0   83   5 10  41  1      32  8        32  8      1024  8 i  262144 16w 
+047:  0   85   5 10  42  1      32  8        32  8      1024  8 i  262144 16w 
+|- Collaborative Processor Performance Control                  CPPC       <OFF>
+   |- Capabilities     Lowest      Efficient     Guaranteed        Highest      
+   |- CPU #0       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #1       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #2       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #3       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #4       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #5       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #6       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #7       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #8       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #9       0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #10      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #11      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #12      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #13      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #14      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #15      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #16      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #17      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #18      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #19      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #20      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #21      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #22      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #23      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #24      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #25      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #26      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #27      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #28      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #29      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #30      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #31      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #32      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #33      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #34      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #35      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #36      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #37      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #38      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #39      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #40      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #41      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #42      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #43      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #44      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #45      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #46      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+   |- CPU #47      0.00 (  0)     0.00 (  0)     0.00 (  0)     0.00 (  0)      
+                              Zen UMC  [14AD]                              
+Controller #0                                                    Disabled  
+ Bus Rate  2400 MHz       Bus Speed 2429 MHz       REG DDR5 Speed 4858 MT/s
+                                                                           
+ Cha   CL  RCDr RCDw  RP  RAS   RC  RRDs RRDl FAW  WTRs WTRl  WR  clRR clWW
+  #0   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #1   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #2   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #3   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #4   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #5   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #6   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #7   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #8   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #9   40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #10  40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+  #11  40   39   39   39   77  116    8   12   32    6   24   72    5   17 
+      CWL  RTP RdWr WrRd scWW sdWW ddWW scRR sdRR ddRR drRR drWW drWR drRRD
+  #0   38   18   20    5    1    9    9    1    8    8    0    0    0    0 
+  #1   38   18   21    5    1    9    9    1    8    8    0    0    0    0 
+  #2   38   18   21    5    1    9    9    1    8    8    0    0    0    0 
+  #3   38   18   19    5    1    9    9    1    8    8    0    0    0    0 
+  #4   38   18   19    5    1    9    9    1    8    8    0    0    0    0 
+  #5   38   18   20    5    1    9    9    1    8    8    0    0    0    0 
+  #6   38   18   20    5    1    9    9    1    8    8    0    0    0    0 
+  #7   38   18   21    5    1    9    9    1    8    8    0    0    0    0 
+  #8   38   18   21    5    1    9    9    1    8    8    0    0    0    0 
+  #9   38   18   19    5    1    9    9    1    8    8    0    0    0    0 
+  #10  38   18   19    5    1    9    9    1    8    8    0    0    0    0 
+  #11  38   18   20    5    1    9    9    1    8    8    0    0    0    0 
+      REFI RFC1 RFC2 RFCsb RCPB RPPB BGS:Alt  Ban  Page  CKE  CMD  GDM  ECC
+  #0  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #1  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #2  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #3  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #4  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #5  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #6  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #7  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #8  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #9  9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #10 9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+  #11 9347  312  192  312   0    0    ON OFF  R0W0   0    0   1T   OFF   1 
+      MRD:PDA   MOD:PDA  WRMPR STAG PDM RDDATA WRD  WRL  RDL  XS   XP CPDED
+  #0   32  32    32  32    24   36 0:P:0   31   6   29   36  732   18   12 
+  #1   32  32    32  32    24   36 0:P:0   31   6   29   36  732   18   12 
+  #2   32  32    32  32    24   36 0:P:0   31   6   29   36  732   18   12 
+  #3   32  32    32  32    24   36 0:P:0   31   6   29   34  732   18   12 
+  #4   32  32    32  32    24   36 0:P:0   31   6   29   34  732   18   12 
+  #5   32  32    32  32    24   36 0:P:0   31   6   29   36  732   18   12 
+  #6   32  32    32  32    24   36 0:P:0   31   6   29   36  732   18   12 
+  #7   32  32    32  32    24   36 0:P:0   31   6   29   36  732   18   12 
+  #8   32  32    32  32    24   36 0:P:0   31   6   29   36  732   18   12 
+  #9   32  32    32  32    24   36 0:P:0   31   6   29   34  732   18   12 
+  #10  32  32    32  32    24   36 0:P:0   31   6   29   34  732   18   12 
+  #11  32  32    32  32    24   36 0:P:0   31   6   29   36  732   18   12 
+                                                                           
+ DIMM Geometry for channel #0                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #1                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #2                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #3                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #4                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #5                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #6                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #7                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #8                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #9                                              
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #10                                             
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
+ DIMM Geometry for channel #11                                             
+      Slot Bank Rank     Rows   Columns    Memory Size (MB)                
+       #0                                                                  
+       #1    16    1     32768      1024           4096 MB32G48R80M2R8-I1TM
