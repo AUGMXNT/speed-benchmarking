@@ -22,3 +22,15 @@ Results for results-nps4-srat-l3:
         "mbw": 128.32418743951416
     }
 }
+Results for results-f31-l3-srat:
+{
+    "likwid_copy": 172.293857421875,
+    "likwid_stream": 173.132177734375,
+    "likwid_triad": 172.4758203125,
+    "sysbench_memory_read_gib": 191.199125,
+    "llama_llama-2-7b.Q4_0": {
+        "tokens_per_second": 38.361456,
+        "model_size_gb": 3.5623703002929688,
+        "mbw": 136.6577115303955
+    }
+}

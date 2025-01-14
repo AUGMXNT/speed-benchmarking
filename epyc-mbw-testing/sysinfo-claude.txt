@@ -1,0 +1,2902 @@
+============================
+System Information Collection
+============================
+Date: Tue Jan 14 10:41:59 PM JST 2025
+
+============================
+Basic System Information (uname)
+============================
+Kernel: Linux epyc 6.13.0-rc6-1-mainline #1 SMP PREEMPT_DYNAMIC Tue, 07 Jan 2025 12:24:19 +0000 x86_64 GNU/Linux
+OS Release: "CachyOS"
+
+============================
+System Information (inxi)
+============================
+System:
+  Kernel: 6.13.0-rc6-1-mainline arch: x86_64 bits: 64 compiler: gcc v: 14.2.1 clocksource: tsc
+  Console: pty pts/3 DM: 1: GDM v: 47.0 2: SDDM note: stopped Distro: CachyOS base: Arch Linux
+Machine:
+  Type: Server System: Giga product: MZ33-AR0-000 v: 5MZ33AR0MR-000 serial: <superuser required>
+    Chassis: type: 17 v: 01234567 serial: <superuser required>
+  Mobo: Giga model: MZ33-AR0-000 v: 01000100 serial: <superuser required>
+    part-nu: 01234567890123456789AB uuid: <superuser required> UEFI: GIGABYTE v: F31
+    date: 08/09/2024
+CPU:
+  Info: 24-core model: AMD EPYC 9274F bits: 64 type: MT MCP smt: enabled arch: Zen 4 rev: 1 cache:
+    L1: 1.5 MiB L2: 24 MiB L3: 256 MiB
+  Speed (MHz): avg: 1500 min/max: 1500/4303 boost: enabled cores: 1: 1500 2: 1500 3: 1500
+    4: 1500 5: 1500 6: 1500 7: 1500 8: 1500 9: 1500 10: 1500 11: 1500 12: 1500 13: 1500 14: 1500
+    15: 1500 16: 1500 17: 1500 18: 1500 19: 1500 20: 1500 21: 1500 22: 1500 23: 1500 24: 1500
+    25: 1500 26: 1500 27: 1500 28: 1500 29: 1500 30: 1500 31: 1500 32: 1500 33: 1500 34: 1500
+    35: 1500 36: 1500 37: 1500 38: 1500 39: 1500 40: 1500 41: 1500 42: 1500 43: 1500 44: 1500
+    45: 1500 46: 1500 47: 1500 48: 1500 bogomips: 388977
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3 svm
+Graphics:
+  Device-1: Advanced Micro Devices [AMD/ATI] Navi 31 [Radeon Pro W7900] driver: amdgpu v: kernel
+    arch: RDNA-3 pcie: speed: 16 GT/s lanes: 16 ports: active: none empty: DP-2, DP-3, DP-4, DP-5,
+    Writeback-1 bus-ID: 83:00.0 chip-ID: 1002:7448 class-ID: 0300
+  Device-2: NVIDIA GA107 [GeForce RTX 3050 6GB] vendor: Micro-Star MSI driver: nvidia v: 565.77
+    arch: Ampere pcie: speed: 2.5 GT/s lanes: 8 ports: active: none off: DP-6,HDMI-A-1
+    empty: HDMI-A-2 bus-ID: c1:00.0 chip-ID: 10de:2584 class-ID: 0300
+  Device-3: ASPEED Graphics Family vendor: Gigabyte driver: ast v: kernel ports: active: none
+    off: DP-1 empty: none bus-ID: c7:00.0 chip-ID: 1a03:2000 class-ID: 0300
+  Display: wayland server: X.org v: 1.21.1.15 with: Xwayland v: 24.1.4 compositor: gnome-shell
+    driver: X: loaded: nvidia unloaded: vesa failed: modesetting alternate: fbdev,nouveau,nv
+    gpu: ast,nvidia,nvidia-nvswitch tty: 104x26
+  Monitor-1: DP-1 size-res: N/A in console modes: max: 1024x768 min: 640x480
+  Monitor-2: DP-6 model: LG (GoldStar) ULTRAGEAR+ serial: <filter> res: 3840x2160 dpi: 139
+    size: 700x390mm (27.56x15.35") diag: 801mm (31.5") modes: max: 3840x2160 min: 640x480
+  Monitor-3: HDMI-A-1 model: VG27A serial: <filter> res: 2560x1440 dpi: 109
+    size: 597x336mm (23.5x13.23") diag: 685mm (27") modes: max: 2560x1440 min: 640x480
+  API: EGL v: 1.5 hw: drv: nvidia platforms: surfaceless: drv: nvidia inactive: gbm,wayland,x11
+  API: OpenGL v: 4.6.0 vendor: nvidia v: 565.77 note: console (EGL sourced) renderer: NVIDIA
+    GeForce RTX 3050/PCIe/SSE2
+  API: Vulkan v: 1.4.303 layers: 6 surfaces: N/A device: 0 type: discrete-gpu driver: N/A
+    device-ID: 10de:2584 device: 1 type: discrete-gpu driver: N/A device-ID: 1002:7448
+Audio:
+  Device-1: Advanced Micro Devices [AMD/ATI] Navi 31 HDMI/DP Audio driver: snd_hda_intel v: kernel
+    pcie: speed: 16 GT/s lanes: 16 bus-ID: 83:00.1 chip-ID: 1002:ab30 class-ID: 0403
+  Device-2: NVIDIA GA107 High Definition Audio vendor: Micro-Star MSI driver: snd_hda_intel
+    v: kernel pcie: speed: 16 GT/s lanes: 8 bus-ID: c1:00.1 chip-ID: 10de:2291 class-ID: 0403
+  API: ALSA v: k6.13.0-rc6-1-mainline status: kernel-api
+  Server-1: sndiod v: N/A status: off
+  Server-2: PipeWire v: 1.2.7 status: active with: 1: pipewire-pulse status: active
+    2: wireplumber status: active 3: pipewire-alsa type: plugin 4: pw-jack type: plugin
+Network:
+  Device-1: Broadcom BCM57416 NetXtreme-E Dual-Media 10G RDMA Ethernet vendor: Gigabyte
+    driver: bnxt_en v: kernel pcie: speed: 8 GT/s lanes: 4 port: N/A bus-ID: 08:00.0
+    chip-ID: 14e4:16d8 class-ID: 0200 temp: 66.0 C
+  IF: enp8s0f0np0 state: down mac: <filter>
+  Device-2: Broadcom BCM57416 NetXtreme-E Dual-Media 10G RDMA Ethernet vendor: Gigabyte
+    driver: bnxt_en v: kernel pcie: speed: 8 GT/s lanes: 4 port: N/A bus-ID: 08:00.1
+    chip-ID: 14e4:16d8 class-ID: 0200
+  IF: enp8s0f1np1 state: up speed: 1000 Mbps duplex: full mac: <filter>
+  IF-ID-1: br-282ba6d898f0 state: up speed: 10000 Mbps duplex: unknown mac: <filter>
+  IF-ID-2: docker0 state: down mac: <filter>
+  IF-ID-3: tailscale0 state: unknown speed: -1 duplex: full mac: N/A
+  IF-ID-4: veth1084f0f state: up speed: 10000 Mbps duplex: full mac: <filter>
+  IF-ID-5: veth19b75f8 state: up speed: 10000 Mbps duplex: full mac: <filter>
+  IF-ID-6: veth8b1e72d state: up speed: 10000 Mbps duplex: full mac: <filter>
+  IF-ID-7: veth8fc74b4 state: up speed: 10000 Mbps duplex: full mac: <filter>
+  IF-ID-8: vethaa9f945 state: up speed: 10000 Mbps duplex: full mac: <filter>
+Drives:
+  Local Storage: total: 18.46 TiB used: 7.58 TiB (41.1%)
+  ID-1: /dev/nvme0n1 vendor: Lexar model: SSD NM790 4TB size: 3.73 TiB speed: 63.2 Gb/s lanes: 4
+    tech: SSD serial: <filter> fw-rev: 12237 temp: 46.9 C scheme: GPT
+  ID-2: /dev/nvme1n1 vendor: Lexar model: SSD NM790 4TB size: 3.73 TiB speed: 63.2 Gb/s lanes: 4
+    tech: SSD serial: <filter> fw-rev: 12237 temp: 45.9 C scheme: GPT
+  ID-3: /dev/nvme2n1 vendor: Crucial model: CT4000P3SSD8 size: 3.64 TiB speed: 31.6 Gb/s
+    lanes: 4 tech: SSD serial: <filter> fw-rev: P9CR30A temp: 32.9 C scheme: GPT
+  ID-4: /dev/nvme3n1 vendor: Sabrent model: Rocket 4.0 Plus size: 3.64 TiB speed: 63.2 Gb/s
+    lanes: 4 tech: SSD serial: <filter> fw-rev: R4PB47.2 temp: 26.9 C scheme: GPT
+  ID-5: /dev/nvme4n1 vendor: Move Speed model: YSSDHB-4TN7000 size: 3.73 TiB speed: 63.2 Gb/s
+    lanes: 4 tech: SSD serial: <filter> fw-rev: SN13683 temp: 43.9 C scheme: GPT
+Partition:
+  ID-1: / size: 3.72 TiB used: 3.27 TiB (87.7%) fs: btrfs dev: /dev/nvme4n1p2
+  ID-2: /boot size: 2 GiB used: 741.9 MiB (36.3%) fs: vfat dev: /dev/nvme4n1p1
+  ID-3: /home size: 3.72 TiB used: 3.27 TiB (87.7%) fs: btrfs dev: /dev/nvme4n1p2
+  ID-4: /var/log size: 3.72 TiB used: 3.27 TiB (87.7%) fs: btrfs dev: /dev/nvme4n1p2
+  ID-5: /var/tmp size: 3.72 TiB used: 3.27 TiB (87.7%) fs: btrfs dev: /dev/nvme4n1p2
+Swap:
+  ID-1: swap-1 type: zram size: 377.59 GiB used: 0 KiB (0.0%) priority: 100 dev: /dev/zram0
+Sensors:
+  Src: ipmi Permissions: Unable to run ipmi sensors. Root privileges required.
+  Src: lm-sensors System Temperatures: cpu: 66.0 C mobo: N/A
+  Fan Speeds (rpm): N/A
+  GPU: device: nvidia screen: :0.0 temp: 33 C device: amdgpu temp: 41.0 C mem: 41.0 C fan: 0
+    watts: 53.00
+Info:
+  Memory: total: 384 GiB note: est. available: 377.59 GiB used: 8.77 GiB (2.3%)
+  Processes: 813 Power: uptime: 2h 58m states: freeze,mem,disk suspend: s2idle wakeups: 0
+    hibernate: shutdown Init: systemd v: 257 default: graphical
+  Packages: pm: pacman pkgs: 1709 Compilers: clang: 18.1.8 gcc: 14.2.1 alt: 13 Shell: Bash
+    v: 5.2.37 default: fish v: 3.7.1 running-in: pty pts/3 inxi: 3.3.36
+
+============================
+Basic Hardware Information (inxi)
+============================
+Machine:
+  Type: Server System: Giga product: MZ33-AR0-000 v: 5MZ33AR0MR-000 serial: <superuser required>
+  Mobo: Giga model: MZ33-AR0-000 v: 01000100 serial: <superuser required> UEFI: GIGABYTE v: F31
+    date: 08/09/2024
+
+============================
+CPU Information (inxi)
+============================
+CPU:
+  Info: 24-core model: AMD EPYC 9274F bits: 64 type: MT MCP cache: L2: 24 MiB
+  Speed (MHz): avg: 1500 min/max: 1500/4303 cores: 1: 1500 2: 1500 3: 1500 4: 1500 5: 1500
+    6: 1500 7: 1500 8: 1500 9: 1500 10: 1500 11: 1500 12: 1500 13: 1500 14: 1500 15: 1500 16: 1500
+    17: 1500 18: 1500 19: 1500 20: 1500 21: 1500 22: 1500 23: 1500 24: 1500 25: 1500 26: 1500
+    27: 1500 28: 1500 29: 1500 30: 1500 31: 1500 32: 1500 33: 1500 34: 1500 35: 1500 36: 1500
+    37: 1500 38: 1500 39: 1500 40: 1500 41: 1500 42: 1500 43: 1500 44: 1500 45: 1500 46: 1500
+    47: 1500 48: 1500
+
+============================
+Memory Information (inxi)
+============================
+Info:
+  Memory: total: 384 GiB note: est. available: 377.59 GiB used: 8.82 GiB (2.3%)
+  Processes: 818 Uptime: 2h 58m Init: systemd Shell: Bash inxi: 3.3.36
+
+============================
+CPU Information (lscpu)
+============================
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        52 bits physical, 57 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               48
+On-line CPU(s) list:                  0-47
+Vendor ID:                            AuthenticAMD
+Model name:                           AMD EPYC 9274F 24-Core Processor
+CPU family:                           25
+Model:                                17
+Thread(s) per core:                   2
+Core(s) per socket:                   24
+Socket(s):                            1
+Stepping:                             1
+Frequency boost:                      enabled
+CPU(s) scaling MHz:                   64%
+CPU max MHz:                          4303.1250
+CPU min MHz:                          1500.0000
+BogoMIPS:                             8103.69
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid overflow_recov succor smca fsrm flush_l1d debug_swap
+Virtualization:                       AMD-V
+L1d cache:                            768 KiB (24 instances)
+L1i cache:                            768 KiB (24 instances)
+L2 cache:                             24 MiB (24 instances)
+L3 cache:                             256 MiB (8 instances)
+NUMA node(s):                         8
+NUMA node0 CPU(s):                    0-2,24-26
+NUMA node1 CPU(s):                    3-5,27-29
+NUMA node2 CPU(s):                    6-8,30-32
+NUMA node3 CPU(s):                    9-11,33-35
+NUMA node4 CPU(s):                    12-14,36-38
+NUMA node5 CPU(s):                    15-17,39-41
+NUMA node6 CPU(s):                    18-20,42-44
+NUMA node7 CPU(s):                    21-23,45-47
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Mitigation; Safe RET
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+============================
+CPU Cache Information (lscpu -C)
+============================
+NAME ONE-SIZE ALL-SIZE WAYS TYPE        LEVEL  SETS PHY-LINE COHERENCY-SIZE
+L1d       32K     768K    8 Data            1    64        1             64
+L1i       32K     768K    8 Instruction     1    64        1             64
+L2         1M      24M    8 Unified         2  2048        1             64
+L3        32M     256M   16 Unified         3 32768        1             64
+
+============================
+NUMA/Topology Information (lstopo)
+============================
+Machine (378GB total) + Package L#0
+  Die L#0
+    NUMANode L#0 (P#0 47GB)
+    L3 L#0 (32MB)
+      L2 L#0 (1024KB) + L1d L#0 (32KB) + L1i L#0 (32KB) + Core L#0
+        PU L#0 (P#0)
+        PU L#1 (P#24)
+      L2 L#1 (1024KB) + L1d L#1 (32KB) + L1i L#1 (32KB) + Core L#1
+        PU L#2 (P#1)
+        PU L#3 (P#25)
+      L2 L#2 (1024KB) + L1d L#2 (32KB) + L1i L#2 (32KB) + Core L#2
+        PU L#4 (P#2)
+        PU L#5 (P#26)
+    HostBridge
+      PCIBridge
+        PCIBridge
+          PCIBridge
+            PCI 83:00.0 (VGA)
+  Die L#1
+    NUMANode L#1 (P#1 47GB)
+    L3 L#1 (32MB)
+      L2 L#3 (1024KB) + L1d L#3 (32KB) + L1i L#3 (32KB) + Core L#3
+        PU L#6 (P#3)
+        PU L#7 (P#27)
+      L2 L#4 (1024KB) + L1d L#4 (32KB) + L1i L#4 (32KB) + Core L#4
+        PU L#8 (P#4)
+        PU L#9 (P#28)
+      L2 L#5 (1024KB) + L1d L#5 (32KB) + L1i L#5 (32KB) + Core L#5
+        PU L#10 (P#5)
+        PU L#11 (P#29)
+  Die L#2
+    NUMANode L#2 (P#2 47GB)
+    L3 L#2 (32MB)
+      L2 L#6 (1024KB) + L1d L#6 (32KB) + L1i L#6 (32KB) + Core L#6
+        PU L#12 (P#6)
+        PU L#13 (P#30)
+      L2 L#7 (1024KB) + L1d L#7 (32KB) + L1i L#7 (32KB) + Core L#7
+        PU L#14 (P#7)
+        PU L#15 (P#31)
+      L2 L#8 (1024KB) + L1d L#8 (32KB) + L1i L#8 (32KB) + Core L#8
+        PU L#16 (P#8)
+        PU L#17 (P#32)
+    HostBridge
+      PCIBridge
+        PCI c1:00.0 (VGA)
+      PCIBridge
+        PCIBridge
+          PCI c7:00.0 (VGA)
+      PCIBridge
+        2 x { PCI c9:00.0-1 (SATA) }
+  Die L#3
+    NUMANode L#3 (P#3 47GB)
+    L3 L#3 (32MB)
+      L2 L#9 (1024KB) + L1d L#9 (32KB) + L1i L#9 (32KB) + Core L#9
+        PU L#18 (P#9)
+        PU L#19 (P#33)
+      L2 L#10 (1024KB) + L1d L#10 (32KB) + L1i L#10 (32KB) + Core L#10
+        PU L#20 (P#10)
+        PU L#21 (P#34)
+      L2 L#11 (1024KB) + L1d L#11 (32KB) + L1i L#11 (32KB) + Core L#11
+        PU L#22 (P#11)
+        PU L#23 (P#35)
+  Die L#4
+    NUMANode L#4 (P#4 47GB)
+    L3 L#4 (32MB)
+      L2 L#12 (1024KB) + L1d L#12 (32KB) + L1i L#12 (32KB) + Core L#12
+        PU L#24 (P#12)
+        PU L#25 (P#36)
+      L2 L#13 (1024KB) + L1d L#13 (32KB) + L1i L#13 (32KB) + Core L#13
+        PU L#26 (P#13)
+        PU L#27 (P#37)
+      L2 L#14 (1024KB) + L1d L#14 (32KB) + L1i L#14 (32KB) + Core L#14
+        PU L#28 (P#14)
+        PU L#29 (P#38)
+  Die L#5
+    NUMANode L#5 (P#5 47GB)
+    L3 L#5 (32MB)
+      L2 L#15 (1024KB) + L1d L#15 (32KB) + L1i L#15 (32KB) + Core L#15
+        PU L#30 (P#15)
+        PU L#31 (P#39)
+      L2 L#16 (1024KB) + L1d L#16 (32KB) + L1i L#16 (32KB) + Core L#16
+        PU L#32 (P#16)
+        PU L#33 (P#40)
+      L2 L#17 (1024KB) + L1d L#17 (32KB) + L1i L#17 (32KB) + Core L#17
+        PU L#34 (P#17)
+        PU L#35 (P#41)
+  Die L#6
+    NUMANode L#6 (P#6 47GB)
+    L3 L#6 (32MB)
+      L2 L#18 (1024KB) + L1d L#18 (32KB) + L1i L#18 (32KB) + Core L#18
+        PU L#36 (P#18)
+        PU L#37 (P#42)
+      L2 L#19 (1024KB) + L1d L#19 (32KB) + L1i L#19 (32KB) + Core L#19
+        PU L#38 (P#19)
+        PU L#39 (P#43)
+      L2 L#20 (1024KB) + L1d L#20 (32KB) + L1i L#20 (32KB) + Core L#20
+        PU L#40 (P#20)
+        PU L#41 (P#44)
+    HostBridge
+      PCIBridge
+        PCI 01:00.0 (NVMExp)
+          Block(Disk) "nvme0n1"
+      PCIBridge
+        PCI 02:00.0 (NVMExp)
+          Block(Disk) "nvme1n1"
+      PCIBridge
+        PCI 03:00.0 (NVMExp)
+          Block(Disk) "nvme2n1"
+      PCIBridge
+        PCI 04:00.0 (NVMExp)
+          Block(Disk) "nvme3n1"
+      PCIBridge
+        PCI 05:00.0 (NVMExp)
+          Block(Disk) "nvme4n1"
+      PCIBridge
+        PCI 08:00.0 (Ethernet)
+          Net "enp8s0f0np0"
+        PCI 08:00.1 (Ethernet)
+          Net "enp8s0f1np1"
+      PCIBridge
+        2 x { PCI 0a:00.0-1 (SATA) }
+  Die L#7
+    NUMANode L#7 (P#7 47GB)
+    L3 L#7 (32MB)
+      L2 L#21 (1024KB) + L1d L#21 (32KB) + L1i L#21 (32KB) + Core L#21
+        PU L#42 (P#21)
+        PU L#43 (P#45)
+      L2 L#22 (1024KB) + L1d L#22 (32KB) + L1i L#22 (32KB) + Core L#22
+        PU L#44 (P#22)
+        PU L#45 (P#46)
+      L2 L#23 (1024KB) + L1d L#23 (32KB) + L1i L#23 (32KB) + Core L#23
+        PU L#46 (P#23)
+        PU L#47 (P#47)
+
+============================
+NUMA Hardware Information (numactl)
+============================
+available: 8 nodes (0-7)
+node 0 cpus: 0 1 2 24 25 26
+node 0 size: 48065 MB
+node 0 free: 45262 MB
+node 1 cpus: 3 4 5 27 28 29
+node 1 size: 48382 MB
+node 1 free: 46290 MB
+node 2 cpus: 6 7 8 30 31 32
+node 2 size: 48382 MB
+node 2 free: 44373 MB
+node 3 cpus: 9 10 11 33 34 35
+node 3 size: 48382 MB
+node 3 free: 46584 MB
+node 4 cpus: 12 13 14 36 37 38
+node 4 size: 48340 MB
+node 4 free: 46912 MB
+node 5 cpus: 15 16 17 39 40 41
+node 5 size: 48337 MB
+node 5 free: 46552 MB
+node 6 cpus: 18 19 20 42 43 44
+node 6 size: 48382 MB
+node 6 free: 43464 MB
+node 7 cpus: 21 22 23 45 46 47
+node 7 size: 48382 MB
+node 7 free: 47059 MB
+node distances:
+node     0    1    2    3    4    5    6    7 
+   0:   10   11   11   11   11   11   11   11 
+   1:   11   10   11   11   11   11   11   11 
+   2:   11   11   10   11   11   11   11   11 
+   3:   11   11   11   10   11   11   11   11 
+   4:   11   11   11   11   10   11   11   11 
+   5:   11   11   11   11   11   10   11   11 
+   6:   11   11   11   11   11   11   10   11 
+   7:   11   11   11   11   11   11   11   10 
+
+============================
+Processor Information (dmidecode)
+============================
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.5.0 present.
+
+Handle 0x003B, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: P0
+	Type: Central Processor
+	Family: Zen
+	Manufacturer: Advanced Micro Devices, Inc.
+	ID: 11 0F A1 00 FF FB 8B 17
+	Signature: Family 25, Model 17, Stepping 1
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD EPYC 9274F 24-Core Processor
+	Voltage: 0.9 V
+	External Clock: 100 MHz
+	Max Speed: 4300 MHz
+	Current Speed: 4050 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket SP5
+	L1 Cache Handle: 0x0038
+	L2 Cache Handle: 0x0039
+	L3 Cache Handle: 0x003A
+	Serial Number: 2B63D8FB121005A
+	Asset Tag: Unknown
+	Part Number: Unknown
+	Core Count: 24
+	Core Enabled: 24
+	Thread Count: 48
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Hardware Thread
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+
+============================
+Cache Information (dmidecode)
+============================
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.5.0 present.
+
+Handle 0x0038, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 - Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0039, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2 - Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 24 MB
+	Maximum Size: 24 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x003A, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L3 - Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 256 MB
+	Maximum Size: 256 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+
+============================
+Memory Information (dmidecode)
+============================
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.5.0 present.
+
+Handle 0x003E, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 12 TB
+	Error Information Handle: 0x003D
+	Number Of Devices: 24
+
+Handle 0x0041, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0040
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_A0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0043, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0042
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_A1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 57050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0046, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0045
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_B0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0048, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0047
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_B1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 4F050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x004B, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x004A
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_C0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x004D, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x004C
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_C1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 53050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0050, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x004F
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_D0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0052, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0051
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_D1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 4D050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0055, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0054
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_E0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0057, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0056
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_E1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 55050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x005A, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0059
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_F0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x005C, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x005B
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_F1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 4E050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x005F, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x005E
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_G0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0061, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0060
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_G1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 4C050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0064, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0063
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_H0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0066, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0065
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_H1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 56050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0069, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0068
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_I0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x006B, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x006A
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_I1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 51050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x006E, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x006D
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_J0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0070, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x006F
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_J1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 52050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0073, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0072
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_K0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0075, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0074
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_K1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 50050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0078, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0077
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_P0_L0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x007A, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: 0x0079
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_P0_L1
+	Bank Locator: BANK 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 54050000
+	Asset Tag: Not Specified
+	Part Number: MB32G48R80M2R8-I1TMT          
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+
+============================
+CPU Information (hwinfo)
+============================
+01: None 00.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: rdCR.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4300 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+02: None 01.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: wkFv.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+03: None 02.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: +rIN.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1717 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+04: None 03.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: 4zLr.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4300 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+05: None 04.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: 94PJ.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4283 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+06: None 05.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: EBSn.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4304 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+07: None 06.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: JIVF.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+08: None 07.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: OPYj.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1497 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+09: None 08.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: TWbB.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1718 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+10: None 09.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: Ydef.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4296 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+11: None 0a.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: dkh7.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+12: None 0b.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: hrkb.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1680 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+13: None 0c.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: myn3.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4292 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+14: None 0d.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: r3rX.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4311 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+15: None 0e.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: wAu+.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4294 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+16: None 0f.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: +HxT.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1166 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+17: None 10.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: 4P_x.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1158 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+18: None 11.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: 9W1Q.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1250 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+19: None 12.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: Ed4u.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+20: None 13.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: Jk7M.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 2563 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+21: None 14.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: OrAq.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1716 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+22: None 15.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: TyDI.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4300 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+23: None 16.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: X3Hm.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+24: None 17.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: bthG.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4296 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+25: None 18.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: g_kk.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4050 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+26: None 19.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: l5oC.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+27: None 1a.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: qCrg.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+28: None 1b.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: vJu8.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4307 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+29: None 1c.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: _Qxc.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4287 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+30: None 1d.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: 3Y_4.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4280 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+31: None 1e.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: 8f1Z.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4300 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+32: None 1f.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: Dm41.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+33: None 20.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: It7V.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+34: None 21.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: N_Az.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4300 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+35: None 22.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: R5ER.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1717 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+36: None 23.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: WCHv.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1718 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+37: None 24.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: bJKN.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+38: None 25.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: gQNr.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4289 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+39: None 26.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: lXQJ.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4290 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+40: None 27.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: qeTn.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+41: None 28.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: vlWF.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1250 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+42: None 29.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: _sZj.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1261 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+43: None 2a.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: 3_cB.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4293 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+44: None 2b.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: 85gf.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4291 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+45: None 2c.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: DCj7.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1500 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+46: None 2d.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: IJmb.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4300 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+47: None 2e.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: MQp3.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 1717 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+48: None 2f.0: 10103 CPU
+  [Created at cpu.509]
+  Unique ID: RXsX.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "AuthenticAMD"
+  Model: 25.17.1 "AMD EPYC 9274F 24-Core Processor"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,mmx,fxsr,sse,sse2,ht,syscall,nx,mmxext,fxsr_opt,pdpe1gb,rdtscp,lm,constant_tsc,rep_good,amd_lbr_v2,nopl,xtopology,nonstop_tsc,cpuid,extd_apicid,aperfmperf,rapl,pni,pclmulqdq,monitor,ssse3,fma,cx16,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,aes,xsave,avx,f16c,rdrand,lahf_lm,cmp_legacy,svm,extapic,cr8_legacy,abm,sse4a,misalignsse,3dnowprefetch,osvw,ibs,skinit,wdt,tce,topoext,perfctr_core,perfctr_nb,bpext,perfctr_llc,mwaitx,cpb,cat_l3,cdp_l3,hw_pstate,ssbd,mba,perfmon_v2,ibrs,ibpb,stibp,ibrs_enhanced,vmmcall,fsgsbase,bmi1,avx2,smep,bmi2,erms,invpcid,cqm,rdt_a,avx512f,avx512dq,rdseed,adx,smap,avx512ifma,clflushopt,clwb,avx512cd,sha_ni,avx512bw,avx512vl,xsaveopt,xsavec,xgetbv1,xsaves,cqm_llc,cqm_occup_llc,cqm_mbm_total,cqm_mbm_local,user_shstk,avx512_bf16,clzero,irperf,xsaveerptr,rdpru,wbnoinvd,amd_ppin,cppc,arat,npt,lbrv,svm_lock,nrip_save,tsc_scale,vmcb_clean,flushbyasid,decodeassists,pausefilter,pfthreshold,avic,v_vmsave_vmload,vgif,x2
+  Clock: 4297 MHz
+  BogoMips: 8103.69
+  Cache: 1024 kb
+  Units/Processor: 48
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+============================
+Memory Information (hwinfo)
+============================
+01: None 00.0: 10102 Main Memory
+  [Created at memory.74]
+  Unique ID: rdCR.CxwsZFjVASF
+  Hardware Class: memory
+  Model: "Main Memory"
+  Memory Range: 0x00000000-0x5e65eb9fff (rw)
+  Memory Size: 384 GB
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+============================
+BIOS Information (hwinfo)
+============================
+01: None 00.0: 10105 BIOS
+  [Created at bios.186]
+  Unique ID: rdCR.lZF+r4EgHp4
+  Hardware Class: bios
+  BIOS Keyboard LED Status:
+    Scroll Lock: off
+    Num Lock: off
+    Caps Lock: off
+  SMBIOS Version: 3.5
+  BIOS Info: #0
+    Vendor: "GIGABYTE"
+    Version: "F31"
+    Date: "08/09/2024"
+    Start Address: 0xf0000
+    ROM Size: 16384 kB
+    Features: 0x0d030000000177fb9880
+      PCI supported
+      BIOS flashable
+      BIOS shadowing allowed
+      CD boot supported
+      Selectable boot supported
+      BIOS ROM socketed
+      EDD spec supported
+      1.2MB NEC 9800 Japanese Floppy supported
+      1.2MB Toshiba Japanese Floppy supported
+      360kB Floppy supported
+      1.2MB Floppy supported
+      720kB Floppy supported
+      2.88MB Floppy supported
+      Print Screen supported
+      Serial Services supported
+      Printer Services supported
+      CGA/Mono Video supported
+      ACPI supported
+      USB Legacy supported
+      BIOS Boot Spec supported
+  System Info: #1
+    Manufacturer: "Giga Computing"
+    Product: "MZ33-AR0-000"
+    Version: "5MZ33AR0MR-000"
+    Serial: "01234567890123456789AB"
+    UUID: 7dd64000-d6c1-11ef-8000-10ffe0348c94
+    Wake-up: 0x06 (Power Switch)
+  Board Info: #2
+    Manufacturer: "Giga Computing"
+    Product: "MZ33-AR0-000"
+    Version: "01000100"
+    Serial: "OG4N5800038"
+    Asset Tag: "01234567890123456789AB"
+    Type: 0x0a (Motherboard)
+    Features: 0x0d
+      Hosting Board
+      Removable
+      Replaceable
+    Location: "Default string"
+    Chassis: #3
+  Chassis Info: #3
+    Manufacturer: "Giga Computing"
+    Version: "01234567"
+    Serial: "01234567890123456789AB"
+    Asset Tag: "01234567890123456789AB"
+    Type: 0x11 (Main Server Chassis)
+    Bootup State: 0x03 (Safe)
+    Power Supply State: 0x03 (Safe)
+    Thermal State: 0x03 (Safe)
+    Security Status: 0x03 (None)
+  System Slot: #4
+    Designation: "PCIE_3_A"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0d (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 1
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #5
+    Designation: "PCIE_3_B"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0d (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 2
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #6
+    Designation: "PCIE_3_C"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0d (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 3
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #7
+    Designation: "PCIE_3_D"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0d (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 4
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #8
+    Designation: "U_2_P0_G0_A"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0d (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 5
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #9
+    Designation: "U_2_P0_G0_B"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 6
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #10
+    Designation: "U_2_P0_G0_C"
+    Type: 0xa5 (Other)
+    Bus Width: 0x08 (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 7
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #11
+    Designation: "U_2_P0_G0_D"
+    Type: 0xa5 (Other)
+    Bus Width: 0x08 (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 8
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #12
+    Designation: "PCIE_4_D"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 9
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #13
+    Designation: "PCIE_4_C"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 10
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #14
+    Designation: "PCIE_4_B"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 11
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #15
+    Designation: "PCIE_4_A"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 12
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #16
+    Designation: "U_2_P0_G1_A"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 13
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #17
+    Designation: "U_2_P0_G1_B"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 14
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #18
+    Designation: "U_2_P0_G1_C"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0b (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 15
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #19
+    Designation: "U_2_P0_G1_D"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 16
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #20
+    Designation: "PCIE_6_A"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 17
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #21
+    Designation: "PCIE_6_B"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 18
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #22
+    Designation: "PCIE_6_C"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 19
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #23
+    Designation: "PCIE_6_D"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 20
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #24
+    Designation: "M2_0"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 21
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #25
+    Designation: "N/A"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0a (Other)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 22
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #26
+    Designation: "U2_P0_G2_A"
+    Type: 0xa5 (Other)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 23
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #27
+    Designation: "U2_P0_G2_B"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 24
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #28
+    Designation: "PCIE_7_A"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 25
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #29
+    Designation: "PCIE_7_B"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 26
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #30
+    Designation: "PCIE_7_C"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 27
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #31
+    Designation: "PCIE_7_D"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 28
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #32
+    Designation: "U2_P0_G3_A"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x04 (Long)
+    Slot ID: 29
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #33
+    Designation: "U2_P0_G3_A"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x03 (Short)
+    Slot ID: 30
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #34
+    Designation: "U2_P0_G3_B"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x03 (Short)
+    Slot ID: 31
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  System Slot: #35
+    Designation: "U2_P0_G3_B"
+    Type: 0x06 (PCI)
+    Bus Width: 0x05 (32 bit)
+    Status: 0x04 (In Use)
+    Length: 0x03 (Short)
+    Slot ID: 32
+    Characteristics: 0x010c (3.3 V, Shared, PME#)
+  On Board Devices: #36
+    Video: "To Be Filled By O.E.M."
+  Type 41 Record: #37
+    Data 00: 29 0b 25 00 01 03 01 00 00 ff 10
+    String 1: "Onboard IGD"
+  Type 41 Record: #38
+    Data 00: 29 0b 26 00 01 85 01 00 00 08 c8
+    String 1: "Onboard LAN"
+  Type 41 Record: #39
+    Data 00: 29 0b 27 00 01 81 01 00 00 08 e2
+    String 1: "Onboard 1394"
+  Type 38 Record: #40
+    Data 00: 26 12 28 00 01 20 20 ff a3 0c 00 00 00 00 00 00
+    Data 10: 00 00
+  Type 42 Record: #41
+    Data 00: 2a 10 29 00 02 04 ff 00 00 00 01 02 ff ff ff ff
+  Type 15 Record: #55
+    Data 00: 0f 49 37 00 ff ff 00 00 10 00 03 01 09 00 00 00
+    Data 10: 00 10 7c ff 01 19 02 01 03 02 03 03 00 04 00 05
+    Data 20: 00 06 00 07 00 08 04 09 03 0a 03 0b 00 0c 00 0d
+    Data 30: 00 0e 00 10 00 11 00 12 00 13 00 14 00 15 00 16
+    Data 40: 00 17 00 ff 00 e0 e0 e1 e1
+  Cache Info: #56
+    Designation: "L1 - Cache"
+    Level: L1
+    State: Enabled
+    Mode: 0x01 (Write Back)
+    Location: 0x00 (Internal, Not Socketed)
+    ECC: 0x06 (Multi-bit)
+    Type: 0x05 (Unified)
+    Associativity: 0x07 (8-way Set-Associative)
+    Max. Size: 1536 kB
+    Current Size: 1536 kB
+    Speed: 1 ns
+    Supported SRAM Types: 0x0010 (Pipeline Burst)
+    Current SRAM Type: 0x0010 (Pipeline Burst)
+  Cache Info: #57
+    Designation: "L2 - Cache"
+    Level: L2
+    State: Enabled
+    Mode: 0x01 (Write Back)
+    Location: 0x00 (Internal, Not Socketed)
+    ECC: 0x06 (Multi-bit)
+    Type: 0x05 (Unified)
+    Associativity: 0x07 (8-way Set-Associative)
+    Max. Size: 24576 kB
+    Current Size: 24576 kB
+    Speed: 1 ns
+    Supported SRAM Types: 0x0010 (Pipeline Burst)
+    Current SRAM Type: 0x0010 (Pipeline Burst)
+  Cache Info: #58
+    Designation: "L3 - Cache"
+    Level: L3
+    State: Enabled
+    Mode: 0x01 (Write Back)
+    Location: 0x00 (Internal, Not Socketed)
+    ECC: 0x06 (Multi-bit)
+    Type: 0x05 (Unified)
+    Associativity: 0x08 (16-way Set-Associative)
+    Max. Size: 262144 kB
+    Current Size: 262144 kB
+    Speed: 1 ns
+    Supported SRAM Types: 0x0010 (Pipeline Burst)
+    Current SRAM Type: 0x0010 (Pipeline Burst)
+  Processor Info: #59
+    Socket: "P0"
+    Socket Type: 0x4a (Other)
+    Socket Status: Populated
+    Type: 0x03 (CPU)
+    Family: 0x6b (Other)
+    Manufacturer: "Advanced Micro Devices, Inc."
+    Version: "AMD EPYC 9274F 24-Core Processor"
+    Serial: "2B63D8FB121005A"
+    Asset Tag: "Unknown"
+    Part Number: "Unknown"
+    Processor ID: 0x178bfbff00a10f11
+    Status: 0x01 (Enabled)
+    Voltage: 0.9 V
+    External Clock: 100 MHz
+    Max. Speed: 4300 MHz
+    Current Speed: 4050 MHz
+    L1 Cache: #56
+    L2 Cache: #57
+    L3 Cache: #58
+  Type 44 Record: #60
+    Data 00: 2c 09 3c 00 3b 00 01 02 00
+  32bit-Memory Error Info: #61
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Physical Memory Array: #62
+    Use: 0x03 (System memory)
+    Location: 0x03 (Motherboard)
+    Slots: 24
+    ECC: 0x06 (Multi-bit)
+    Error Info: #61
+  Memory Array Mapping: #63
+    Memory Array: #62
+    Partition Width: 12
+    Start Address: 0x0000000000000000
+    End Address: 0x0000006000000000
+  32bit-Memory Error Info: #64
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #65
+    Location: "DIMM_P0_A0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #64
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #66
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #67
+    Location: "DIMM_P0_A1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "57050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #66
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #68
+    Memory Device: #67
+    Array Mapping: #63
+    Start Address: 0x0000001800000000
+    End Address: 0x0000002000000000
+  32bit-Memory Error Info: #69
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #70
+    Location: "DIMM_P0_B0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #69
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #71
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #72
+    Location: "DIMM_P0_B1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "4F050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #71
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #73
+    Memory Device: #72
+    Array Mapping: #63
+    Start Address: 0x0000002000000000
+    End Address: 0x0000002800000000
+  32bit-Memory Error Info: #74
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #75
+    Location: "DIMM_P0_C0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #74
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #76
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #77
+    Location: "DIMM_P0_C1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "53050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #76
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #78
+    Memory Device: #77
+    Array Mapping: #63
+    Start Address: 0x0000000000000000
+    End Address: 0x0000000800000000
+  32bit-Memory Error Info: #79
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #80
+    Location: "DIMM_P0_D0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #79
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #81
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #82
+    Location: "DIMM_P0_D1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "4D050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #81
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #83
+    Memory Device: #82
+    Array Mapping: #63
+    Start Address: 0x0000002800000000
+    End Address: 0x0000003000000000
+  32bit-Memory Error Info: #84
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #85
+    Location: "DIMM_P0_E0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #84
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #86
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #87
+    Location: "DIMM_P0_E1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "55050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #86
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #88
+    Memory Device: #87
+    Array Mapping: #63
+    Start Address: 0x0000000800000000
+    End Address: 0x0000001000000000
+  32bit-Memory Error Info: #89
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #90
+    Location: "DIMM_P0_F0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #89
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #91
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #92
+    Location: "DIMM_P0_F1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "4E050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #91
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #93
+    Memory Device: #92
+    Array Mapping: #63
+    Start Address: 0x0000001000000000
+    End Address: 0x0000001800000000
+  32bit-Memory Error Info: #94
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #95
+    Location: "DIMM_P0_G0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #94
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #96
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #97
+    Location: "DIMM_P0_G1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "4C050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #96
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #98
+    Memory Device: #97
+    Array Mapping: #63
+    Start Address: 0x0000004800000000
+    End Address: 0x0000005000000000
+  32bit-Memory Error Info: #99
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #100
+    Location: "DIMM_P0_H0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #99
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #101
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #102
+    Location: "DIMM_P0_H1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "56050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #101
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #103
+    Memory Device: #102
+    Array Mapping: #63
+    Start Address: 0x0000005000000000
+    End Address: 0x0000005800000000
+  32bit-Memory Error Info: #104
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #105
+    Location: "DIMM_P0_I0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #104
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #106
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #107
+    Location: "DIMM_P0_I1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "51050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #106
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #108
+    Memory Device: #107
+    Array Mapping: #63
+    Start Address: 0x0000003000000000
+    End Address: 0x0000003800000000
+  32bit-Memory Error Info: #109
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #110
+    Location: "DIMM_P0_J0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #109
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #111
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #112
+    Location: "DIMM_P0_J1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "52050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #111
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #113
+    Memory Device: #112
+    Array Mapping: #63
+    Start Address: 0x0000005800000000
+    End Address: 0x0000006000000000
+  32bit-Memory Error Info: #114
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #115
+    Location: "DIMM_P0_K0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #114
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #116
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #117
+    Location: "DIMM_P0_K1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "50050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #116
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #118
+    Memory Device: #117
+    Array Mapping: #63
+    Start Address: 0x0000003800000000
+    End Address: 0x0000004000000000
+  32bit-Memory Error Info: #119
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #120
+    Location: "DIMM_P0_L0"
+    Bank: "BANK 0"
+    Manufacturer: "Unknown"
+    Serial: "Unknown"
+    Part Number: "Unknown"
+    Memory Array: #62
+    Error Info: #119
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  32bit-Memory Error Info: #121
+    Type: 0x03 (OK)
+    Granularity: 0x02 (Unknown)
+    Operation: 0x02 (Unknown)
+  Memory Device: #122
+    Location: "DIMM_P0_L1"
+    Bank: "BANK 1"
+    Manufacturer: "Micron Technology"
+    Serial: "54050000"
+    Part Number: "MB32G48R80M2R8-I1TMT"
+    Memory Array: #62
+    Error Info: #121
+    Form Factor: 0x09 (DIMM)
+    Type: 0x22 (Other)
+    Type Detail: 0x2080 (Synchronous)
+    Data Width: 64 bits (+16 ECC bits)
+    Size: 32 GB
+    Speed: 4800 MHz
+  Memory Device Mapping: #123
+    Memory Device: #122
+    Array Mapping: #63
+    Start Address: 0x0000004000000000
+    End Address: 0x0000004800000000
+  Type 40 Record: #124
+    Data 00: 28 0e 7c 00 01 09 00 00 00 01 00 00 00 00
+    String 1: "AGESA!V9 GenoaPI-SP5 1.0.0.C"
+  Type 39 Record: #125
+    Data 00: 27 16 7d 00 00 01 02 03 04 00 00 05 00 00 12 09
+    Data 10: ff ff ff ff ff ff
+    String 1: "PSU0"
+    String 2: "N/A"
+    String 3: "N/A"
+    String 4: "N/A"
+    String 5: "N/A"
+  Type 39 Record: #126
+    Data 00: 27 16 7e 00 00 01 02 03 04 00 00 05 00 00 12 09
+    Data 10: ff ff ff ff ff ff
+    String 1: "PSU1"
+    String 2: "N/A"
+    String 3: "N/A"
+    String 4: "N/A"
+    String 5: "N/A"
+  Type 42 Record: #127
+    Data 00: 2a 81 7f 00 40 1d 02 6b 04 b0 ff 18 01 31 00 32
+    Data 10: 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 30
+    Data 20: 00 00 00 01 04 5b 38 87 05 6d de bf d3 11 02 b4
+    Data 30: 11 09 f3 ed db b2 01 01 a9 fe 00 12 00 00 00 00
+    Data 40: 00 00 00 00 00 00 00 00 ff ff 00 00 00 00 00 00
+    Data 50: 00 00 00 00 00 00 00 00 01 01 a9 fe 00 11 00 00
+    Data 60: 00 00 00 00 00 00 00 00 00 00 ff ff 00 00 00 00
+    Data 70: 00 00 00 00 00 00 00 00 00 00 bb 01 00 00 00 00
+    Data 80: 00
+  Type 128 Record: #130
+    Data 00: 80 06 82 00 01 00
+  Type 130 Record: #131
+    Data 00: 82 22 83 00 84 25 de 10 a1 00 00 03 04 00 ff 00
+    Data 10: 00 ff ff 08 04 00 00 00 00 00 00 00 c1 00 62 14
+    Data 20: 23 81
+  Type 130 Record: #132
+    Data 00: 82 22 84 00 91 22 de 10 a1 00 03 04 04 00 ff 00
+    Data 10: 00 ff ff 08 04 00 00 00 00 00 00 00 c1 01 62 14
+    Data 20: 23 81
+  Type 130 Record: #133
+    Data 00: 82 22 85 00 78 14 02 10 10 00 04 06 0c 00 ff 00
+    Data 10: 00 ff ff 10 04 00 00 00 00 00 00 00 81 00 00 05
+    Data 20: 00 00
+  Type 130 Record: #134
+    Data 00: 82 22 86 00 79 14 02 10 10 00 04 06 0c 00 ff 00
+    Data 10: 00 ff ff 10 04 00 00 00 00 00 00 00 82 00 00 05
+    Data 20: 00 00
+  Type 130 Record: #135
+    Data 00: 82 22 87 00 48 74 02 10 00 00 00 03 0c 00 ff 00
+    Data 10: 00 ff ff 10 04 00 00 00 00 00 00 00 83 00 02 10
+    Data 20: 0d 0e
+  Type 130 Record: #136
+    Data 00: 82 22 88 00 30 ab 02 10 00 00 03 04 0c 00 ff 00
+    Data 10: 00 ff ff 10 04 00 00 00 00 00 00 00 83 01 02 10
+    Data 20: 30 ab
+  Type 130 Record: #137
+    Data 00: 82 22 89 00 02 16 97 1d 01 02 08 01 14 00 ff 00
+    Data 10: 00 ff ff 04 04 00 00 00 00 00 00 00 01 00 97 1d
+    Data 20: 02 16
+  Type 130 Record: #138
+    Data 00: 82 22 8a 00 02 16 97 1d 01 02 08 01 15 00 ff 00
+    Data 10: 00 ff ff 04 04 00 00 00 00 00 00 00 02 00 97 1d
+    Data 20: 02 16
+  Type 130 Record: #139
+    Data 00: 82 22 8b 00 0a 54 a9 c0 01 02 08 01 16 00 ff 00
+    Data 10: 00 ff ff 04 03 00 00 00 00 00 00 00 03 00 a9 c0
+    Data 20: 21 50
+  Type 130 Record: #140
+    Data 00: 82 22 8c 00 18 50 87 19 01 02 08 01 17 00 ff 00
+    Data 10: 00 ff ff 04 04 00 00 00 00 00 00 00 04 00 87 19
+    Data 20: 18 50
+  Type 130 Record: #141
+    Data 00: 82 22 8d 00 02 16 4b 1e 01 02 08 01 18 00 ff 00
+    Data 10: 00 ff ff 04 04 00 00 00 00 00 00 00 05 00 4b 1e
+    Data 20: 02 16
+  Type 130 Record: #142
+    Data 00: 82 22 8e 00 42 21 21 1b 00 30 03 0c 1f 00 ff 00
+    Data 10: 00 ff ff 02 03 00 00 00 00 00 00 00 43 00 21 1b
+    Data 20: 42 21
+  Type 130 Record: #143
+    Data 00: 82 22 8f 00 d8 16 e4 14 00 00 00 02 ff ff ff 00
+    Data 10: 00 02 00 04 03 00 00 00 00 00 00 00 00 00 00 00
+    Data 20: 00 00
+  Type 130 Record: #144
+    Data 00: 82 22 90 00 d8 16 e4 14 00 00 00 02 ff ff ff 00
+    Data 10: 00 02 00 04 03 00 00 00 00 00 00 00 00 00 00 00
+    Data 20: 00 00
+  Type 132 Record: #145
+    Data 00: 84 0c 91 00 06 00 00 00 00 00 00 00
+  Type 132 Record: #146
+    Data 00: 84 0c 92 00 06 00 00 00 00 00 00 00
+  Type 133 Record: #147
+    Data 00: 85 0c 93 00 00 30 00 00 18 00 00 00
+  Language Info: #148
+    Languages: en|US|iso8859-1
+    Current: en|US|iso8859-1
+  Type 131 Record: #149
+    Data 00: 83 5c 95 00 d8 16 e4 14 01 10 ff e0 34 8c 94 00
+    Data 10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    Data 20: 00 00 00 00 ee 26 00 00 00 00 00 00 00 00 00 00
+    Data 30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    Data 40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    Data 50: 00 00 02 00 00 00 08 00 58 14 00 10
+    String 1: "Broadcom"
+  Type 131 Record: #150
+    Data 00: 83 5c 96 00 d8 16 e4 14 01 10 ff e0 34 8c 95 00
+    Data 10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    Data 20: 00 00 00 00 ee 27 00 01 00 00 00 00 00 00 00 00
+    Data 30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    Data 40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    Data 50: 00 00 02 00 00 00 08 01 58 14 00 10
+    String 1: "Broadcom"
+  Type 129 Record: #151
+    Data 00: 81 28 97 00 00 00 00 00 00 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #152
+    Data 00: 81 28 98 00 00 00 00 00 01 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #153
+    Data 00: 81 28 99 00 00 00 00 00 02 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #154
+    Data 00: 81 28 9a 00 00 00 00 00 03 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #155
+    Data 00: 81 28 9b 00 00 00 00 00 04 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #156
+    Data 00: 81 28 9c 00 00 00 00 00 05 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #157
+    Data 00: 81 28 9d 00 00 00 00 00 06 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #158
+    Data 00: 81 28 9e 00 00 00 00 00 07 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #159
+    Data 00: 81 28 9f 00 00 00 00 00 08 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #160
+    Data 00: 81 28 a0 00 00 00 00 00 09 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #161
+    Data 00: 81 28 a1 00 00 00 00 00 0a 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #162
+    Data 00: 81 28 a2 00 00 00 00 00 0b 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #163
+    Data 00: 81 28 a3 00 00 00 00 00 0c 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #164
+    Data 00: 81 28 a4 00 00 00 00 00 0d 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #165
+    Data 00: 81 28 a5 00 00 00 00 00 0e 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Type 129 Record: #166
+    Data 00: 81 28 a6 00 00 00 00 00 0f 00 00 00 ff ff ff ff
+    Data 10: ff ff ff ff ff ff ff ff ff ff 00 00 ff ff ff 00
+    Data 20: 00 00 ff ff ff ff ff ff
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+============================
+Memory Information (free)
+============================
+               total        used        free      shared  buff/cache   available
+Mem:           377Gi       8.8Gi       357Gi        22Mi        12Gi       368Gi
+Swap:          377Gi          0B       377Gi
+
+============================
+CPU Vulnerabilities
+============================
+/sys/devices/system/cpu/vulnerabilities/gather_data_sampling:Not affected
+/sys/devices/system/cpu/vulnerabilities/itlb_multihit:Not affected
+/sys/devices/system/cpu/vulnerabilities/l1tf:Not affected
+/sys/devices/system/cpu/vulnerabilities/mds:Not affected
+/sys/devices/system/cpu/vulnerabilities/meltdown:Not affected
+/sys/devices/system/cpu/vulnerabilities/mmio_stale_data:Not affected
+/sys/devices/system/cpu/vulnerabilities/reg_file_data_sampling:Not affected
+/sys/devices/system/cpu/vulnerabilities/retbleed:Not affected
+/sys/devices/system/cpu/vulnerabilities/spec_rstack_overflow:Mitigation: Safe RET
+/sys/devices/system/cpu/vulnerabilities/spec_store_bypass:Mitigation: Speculative Store Bypass disabled via prctl
+/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Enhanced / Automatic IBRS; IBPB: conditional; STIBP: always-on; RSB filling; PBRSB-eIBRS: Not affected; BHI: Not affected
+/sys/devices/system/cpu/vulnerabilities/srbds:Not affected
+/sys/devices/system/cpu/vulnerabilities/tsx_async_abort:Not affected
+
+============================
+Done collecting system information
+============================
