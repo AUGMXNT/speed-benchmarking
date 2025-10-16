@@ -6,7 +6,7 @@ Testing done on a single 600W RTX PRO 6000 Workstation (temps <70C):
 - cuda_13.0.r13.0/compiler.36424714_0 
 
 ## Testing
-I'm testing with [meta-llama/Llama-3.1-8B-Instruct])https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) since the original Qwen3 30B-A3B NVFP4 quant didn't load, but it's a good standard model to test with and there are lots of quants and even our bonus (EAGLE3 head...)
+I'm testing with [meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) since the original Qwen3 30B-A3B NVFP4 quant didn't load, but it's a good standard model to test with and there are lots of quants and even our bonus (EAGLE3 head...)
 
 ### llama.cpp
 Llama.cpp is the best solution for bs=1/c=1 , but even with multi-user optimizations gets quickly overwhelmed.
